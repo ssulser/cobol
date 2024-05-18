@@ -1,5 +1,5 @@
 //SIMONCO JOB (1),'CARD LISTER',CLASS=A,MSGCLASS=A                      00000100
-//LEAPY  EXEC PROC=COB2UCG,SYSOUT='*'                                   00000200
+//COBOL  EXEC PROC=COB2UCG,SYSOUT='*'                                   00000200
 //SYSIN   DD *                                                          00000300
        IDENTIFICATION DIVISION.                                         00000400
        PROGRAM-ID. CARD-LISTER.                                         00000500
