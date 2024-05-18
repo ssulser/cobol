@@ -6,7 +6,7 @@ One of the very old books for this is **Elementary Structured Cobol, A Step By S
 It may not be very high level, but maybe it will help some beginners like me to make the first steps in MVS 3.8.
 
 ### Editor and Submitting JCL
-I'm typing these programs in Visual Code with the IBM Z Open Editor. Afterwards I'm submitting the JCL file which contains the COBOL code and also the data input cards. For that I use the [submit.sh](https://www.jaymoseley.com/hercules/compiling/how_to.htm#topic1) from Jay Moseley.
+I'm typing these programs in Visual Code with the IBM Z Open Editor Extension. Afterwards I'm submitting the JCL file which contains the COBOL code and also the data input cards. For that I use the [submit.sh](https://www.jaymoseley.com/hercules/compiling/how_to.htm#topic1) from Jay Moseley.
 
 ### Note: MVS OS/VS Compiler 1.2.4
 The MVT COBOL compiler that comes with the MVS 3.8 distributions is freely available, but it is really very very old. Recently, a somewhat newer version of OS/VS COBOL 1.2.4 appeared in a relevant discord channel. I installed this compiler and compiled the examples with it. However, the only change that is necessary to be able to compile the examples with MVT COBOL should be the change from COB2UCG to COBUCG in the JCL code and enclosing text (~strings) with ' instead of ". 
