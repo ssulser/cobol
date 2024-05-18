@@ -1,0 +1,320 @@
+                         SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN   CCCCCCCCCC   OOOOOOOOOOOO
+                       SSSSSSSSSSSS   IIIIIIIIII   MMM      MMM  OOOOOOOOOOOO  NNN       NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+                      SS        SS       II       MMMM    MMMM  OO        OO  NNNN      NN  CC        CC  OO        OO
+                     SS                 II       MM MM  MM MM  OO        OO  NN NN     NN  CC            OO        OO
+                    SSS                II       MM  MMMM  MM  OO        OO  NN  NN    NN  CC            OO        OO
+                    SSSSSSSSS         II       MM   MM   MM  OO        OO  NN   NN   NN  CC            OO        OO
+                    SSSSSSSSS        II       MM        MM  OO        OO  NN    NN  NN  CC            OO        OO
+                          SSS       II       MM        MM  OO        OO  NN     NN NN  CC            OO        OO
+                          SS       II       MM        MM  OO        OO  NN      NNNN  CC            OO        OO
+               SS        SS       II       MM        MM  OO        OO  NN       NNN  CC        CC  OO        OO
+              SSSSSSSSSSSS   IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+              SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN         N   CCCCCCCCCC   OOOOOOOOOOOO
+
+
+
+                    JJJJJJJJJJ   2222222222     00000000          444                                  AAAAAAAAAA
+                    JJJJJJJJJJ  222222222222   0000000000        4444                                 AAAAAAAAAAAA
+                        JJ      22        22  00      0000      44 44                                 AA        AA
+                        JJ                22  00     00 00     44  44                                 AA        AA
+                        JJ                22  00    00  00    44   44                                 AA        AA
+                        JJ               22   00   00   00   44444444444                              AAAAAAAAAAAA
+                        JJ             22     00  00    00  444444444444                              AAAAAAAAAAAA
+                        JJ           22       00 00     00         44                                 AA        AA
+                  JJ    JJ         22         0000      00         44                                 AA        AA
+                  JJ    JJ       22           000       00         44                                 AA        AA
+                  JJJJJJJJ      222222222222   0000000000          44                                 AA        AA
+                   JJJJJJ       222222222222    00000000           44                                 AA        AA
+
+
+****A  START  JOB  204  SIMONCO   GRADE LIST            ROOM        3.05.04 PM 18 MAY 24  PRINTER1  SYS HMVS  JOB  204  START  A****
+                                                J E S 2   J O B   L O G
+
+
+15.05.04 JOB  204  $HASP373 SIMONCO  STARTED - INIT  1 - CLASS A - SYS HMVS
+15.05.04 JOB  204  IEF403I SIMONCO - STARTED - TIME=15.05.04
+15.05.04 JOB  204  IEFACTRT COB     /IKFCBL00/00:00:00.05/00:00:00.12/00000/SIMONCO
+15.05.04 JOB  204  IEFACTRT GO      /LOADER  /00:00:00.02/00:00:00.05/00000/SIMONCO
+15.05.04 JOB  204  IEF404I SIMONCO - ENDED - TIME=15.05.04
+15.05.04 JOB  204  $HASP395 SIMONCO  ENDED
+
+
+------ JES2 JOB STATISTICS ------
+
+
+ 18 MAY 24 JOB EXECUTION DATE
+
+
+       100 CARDS READ
+
+
+       225 SYSOUT PRINT RECORDS
+
+
+         0 SYSOUT PUNCH RECORDS
+
+
+      0.00 MINUTES EXECUTION TIME
+    1     //SIMONCO JOB (1),'GRADE LIST',CLASS=A,MSGCLASS=A                       JOB  204
+    2     //COBOL  EXEC PROC=COB2UCG,SYSOUT='*'
+    3     XXCOBUCG PROC SYSOUT=A                                                  00000100
+          ***     PROC FOR COBOL OS/VS 1.2.4                                      00000200
+    4     XXCOB    EXEC  PGM=IKFCBL00                                             00000300
+    5     XXSTEPLIB  DD  DSN=SIMON.COB.VSCOLIB,DISP=SHR                           00000400
+    6     XXSYSPRINT DD  SYSOUT=&SYSOUT                                           00000500
+    7     XXSYSPUNCH DD  SYSOUT=B                                                 00000600
+    8     XXSYSUT1   DD  UNIT=SYSDA,SPACE=(CYL,(1,1))                             00000700
+    9     XXSYSUT2   DD  UNIT=SYSDA,SPACE=(CYL,(1,1))                             00000800
+   10     XXSYSUT3   DD  UNIT=SYSDA,SPACE=(CYL,(1,1))                             00000900
+   11     XXSYSUT4   DD  UNIT=SYSDA,SPACE=(CYL,(1,1))                             00001000
+   12     XXSYSLIN   DD  DSN=&&LOADSET,UNIT=SYSDA,DISP=(MOD,PASS),                00001100
+          XX             SPACE=(TRK,(3,3)),DCB=BLKSIZE=800                        00001200
+   13     //SYSIN   DD *
+   14     XXGO     EXEC  PGM=LOADER,COND=(5,LT,COB)                               00001300
+   15     XXSYSLIN   DD  DSN=&&LOADSET,DISP=(OLD,DELETE)                          00001400
+   16     XXSYSLOUT  DD  SYSOUT=&SYSOUT                                           00001500
+   17     XXSYSOUT   DD  SYSOUT=&SYSOUT                                           00001600
+   18     XXSYSLIB   DD  DSN=SIMON.COB.VSCLLIB,DISP=SHR                           00001700
+   19     //GO.INPUT DD *
+   20     //GO.OUTPUT DD SYSOUT=*,
+          //             DCB=(RECFM=FBA,LRECL=132,BLKSIZE=13200)
+          //
+ STMT NO. MESSAGE
+-
+    6     IEF653I SUBSTITUTION JCL - SYSOUT=*
+   16     IEF653I SUBSTITUTION JCL - SYSOUT=*
+   17     IEF653I SUBSTITUTION JCL - SYSOUT=*
+IEF236I ALLOC. FOR SIMONCO COB COBOL
+IEF237I 180  ALLOCATED TO STEPLIB
+IEF237I 180  ALLOCATED TO SYS00088
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IEF237I JES2 ALLOCATED TO SYSPUNCH
+IEF237I 252  ALLOCATED TO SYSUT1
+IEF237I 251  ALLOCATED TO SYSUT2
+IEF237I 251  ALLOCATED TO SYSUT3
+IEF237I 251  ALLOCATED TO SYSUT4
+IEF237I 251  ALLOCATED TO SYSLIN
+IEF237I JES2 ALLOCATED TO SYSIN
+IEF142I SIMONCO COB COBOL - STEP WAS EXECUTED - COND CODE 0000
+IEF285I   SIMON.COB.VSCOLIB                            KEPT          *--------0
+IEF285I   VOL SER NOS= PUB000.
+IEF285I   UCPUB000                                     KEPT          *--------0
+IEF285I   VOL SER NOS= PUB000.
+IEF285I   JES2.JOB00204.SO0103                         SYSOUT
+IEF285I   JES2.JOB00204.SO0104                         SYSOUT
+IEF285I   SYS24139.T150504.RA000.SIMONCO.R0000001      DELETED       *--------6
+IEF285I   VOL SER NOS= WORK01.
+IEF285I   SYS24139.T150504.RA000.SIMONCO.R0000002      DELETED       *--------6
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   SYS24139.T150504.RA000.SIMONCO.R0000003      DELETED       *-------12
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   SYS24139.T150504.RA000.SIMONCO.R0000004      DELETED       *--------6
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   SYS24139.T150504.RA000.SIMONCO.LOADSET       PASSED        *--------8
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   JES2.JOB00204.SI0101                         SYSIN
+IEF373I STEP /COB     / START 24139.1505
+IEF374I STEP /COB     / STOP  24139.1505 CPU    0MIN 00.04SEC SRB    0MIN 00.01SEC VIRT   136K SYS   216K
+**** JOB NAME: SIMONCO  JOBCARD READ 2024/139 15:05:03 370/ 84 VS2 R03.8 HMVS ******************************************************
+*                                                                                                                                  *
+*  STEP NUMBER:          1  USER CORE:        136K  START TIME:   15:05:04     CPU TIME:    00:00:00.05  ACTIVE TIME:  00:00:00.07 *
+*  STEP NAME:     COB       SYSTEM CORE:      216K  STOP TIME:    15:05:04     SRB TIME:    00:00:00.01  ALLOC TIME:   15:05:04    *
+*  PROGRAM NAME:  IKFCBL00  REGION SIZE:      512K  ELAPSED TIME: 00:00:00.12  TCB TIME:    00:00:00.04  PROGRAM LOAD: 15:05:04    *
+*  CONDITION CODE:   00000  PERFORMANCE GROUP: 004                                                                                 *
+*                           JES2 CARDS:          7       SERVICE UNITS  PAGES IN/OUT  # SWAPS  PAGES SWAP IN/OUT  VIO PAGES IN/OUT *
+*                                                                  235      0 /    0        0           0 /    0          0 /    0 *
+*                                                                                                                                  *
+*   ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT   *
+*   180/D3380         0  180/D3380         0  252/D3350         6  251/D3350         6  251/D3350        12  251/D3350         6   *
+*   251/D3350         8                                                                                                            *
+************************************************************************************************************************************
+IEF236I ALLOC. FOR SIMONCO GO COBOL
+IEF237I 251  ALLOCATED TO SYSLIN
+IEF237I JES2 ALLOCATED TO SYSLOUT
+IEF237I JES2 ALLOCATED TO SYSOUT
+IEF237I 180  ALLOCATED TO SYSLIB
+IEF237I 180  ALLOCATED TO SYS00090
+IEF237I JES2 ALLOCATED TO INPUT
+IEF237I JES2 ALLOCATED TO OUTPUT
+IEF142I SIMONCO GO COBOL - STEP WAS EXECUTED - COND CODE 0000
+IEF285I   SYS24139.T150504.RA000.SIMONCO.LOADSET       DELETED       *--------9
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   JES2.JOB00204.SO0105                         SYSOUT
+IEF285I   JES2.JOB00204.SO0106                         SYSOUT
+IEF285I   SIMON.COB.VSCLLIB                            KEPT          *-------62
+IEF285I   VOL SER NOS= PUB000.
+IEF285I   UCPUB000                                     KEPT          *--------0
+IEF285I   VOL SER NOS= PUB000.
+IEF285I   JES2.JOB00204.SI0102                         SYSIN
+IEF285I   JES2.JOB00204.SO0107                         SYSOUT
+IEF373I STEP /GO      / START 24139.1505
+IEF374I STEP /GO      / STOP  24139.1505 CPU    0MIN 00.02SEC SRB    0MIN 00.00SEC VIRT   332K SYS   216K
+************************************************************************************************************************************
+*                                                                                                                                  *
+*  STEP NUMBER:          2  USER CORE:        332K  START TIME:   15:05:04     CPU TIME:    00:00:00.02  ACTIVE TIME:  00:00:00.03 *
+*  STEP NAME:     GO        SYSTEM CORE:      216K  STOP TIME:    15:05:04     SRB TIME:    00:00:00.00  ALLOC TIME:   15:05:04    *
+*  PROGRAM NAME:  LOADER    REGION SIZE:      512K  ELAPSED TIME: 00:00:00.05  TCB TIME:    00:00:00.02  PROGRAM LOAD: 15:05:04    *
+*  CONDITION CODE:   00000  PERFORMANCE GROUP: 004                                                                                 *
+*                           JES2 CARDS:          2       SERVICE UNITS  PAGES IN/OUT  # SWAPS  PAGES SWAP IN/OUT  VIO PAGES IN/OUT *
+*                                                                  399      0 /    0        0           0 /    0          0 /    0 *
+*                                                                                                                                  *
+*   ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT   *
+*   251/D3350         9  180/D3380        62  180/D3380         0                                                                  *
+************************************************************************************************************************************
+IEF375I  JOB /SIMONCO / START 24139.1505
+IEF376I  JOB /SIMONCO / STOP  24139.1505 CPU    0MIN 00.06SEC SRB    0MIN 00.01SEC
+PP 5740-CB1 RELEASE 2.4                              IBM OS/VS COBOL  JULY  1, 1982          15.05.04  DATE MAY 18,1924
+
+
+   1                        15.05.04        MAY 18,1924
+
+
+00001          IDENTIFICATION DIVISION.
+00002          PROGRAM-ID. GRADE-LIST.
+00003          AUTHOR. SIMON SULSER.
+00004          DATE-WRITTEN. MAY 18,1924.
+00005          DATE-COMPILED. MAY 18,1924.
+00006         *
+00007          ENVIRONMENT DIVISION.
+00008          CONFIGURATION SECTION.
+00009          SOURCE-COMPUTER. IBM-370.
+00010          OBJECT-COMPUTER. IBM-370.
+00011         *
+00012          INPUT-OUTPUT SECTION.
+00013          FILE-CONTROL.
+00014              SELECT GRADE-FILE ASSIGN TO UT-S-INPUT.
+00015              SELECT PRINT-FILE ASSIGN TO UT-S-OUTPUT.
+00016         *
+00017          DATA DIVISION.
+00018          FILE SECTION.
+00019          FD  GRADE-FILE
+00020              LABEL RECORD IS OMITTED.
+00021          01  GRADE-RECORD.
+00022              05  STUDENT-ID-IN           PIC X(10).
+00023              05  STUDENT-NAME-IN         PIC X(25).
+00024              05  FILLER                  PIC X(5).
+00025              05  STUDENT-SCORE1-IN       PIC 99.
+00026              05  FILLER                  PIC X(3).
+00027              05  STUDENT-SCORE2-IN       PIC 99.
+
+00028              05  FILLER                  PIC X(3).
+00029              05  STUDENT-GRADE-IN        PIC X.
+00030              05  FILLER                  PIC X(29).
+00031         *
+00032          FD  PRINT-FILE
+00033              LABEL RECORD IS OMITTED.
+00034          01  PRINT-LINE.
+00035              05  FILLER                  PIC X(11).
+00036              05  STUDENT-NAME-OUT        PIC X(25).
+00037              05  FILLER                  PIC X(5).
+00038              05  STUDENT-ID-OUT          PIC X(10).
+00039              05  FILLER                  PIC X(20).
+00040              05  STUDENT-SCORE1-OUT      PIC 99.
+00041              05  FILLER                  PIC X(4).
+00042              05  STUDENT-SCORE2-OUT      PIC 99.
+00043              05  FILLER                  PIC X(4).
+00044              05  STUDENT-GRADE-OUT       PIC X.
+00045         *
+00046          WORKING-STORAGE SECTION.
+00047         *
+00048          PROCEDURE DIVISION.
+00049          000-MAIN.
+00050              PERFORM INITIALIZATION.
+00051              PERFORM READ-AND-PRINT 20 TIMES.
+00052              PERFORM CLOSING.
+00053              STOP RUN.
+00054         *
+   2        GRADE0LI        15.05.04        MAY 18,1924
+
+
+00055          INITIALIZATION.
+
+00056              OPEN INPUT GRADE-FILE,
+00057                   OUTPUT PRINT-FILE.
+00058         *
+00059          READ-AND-PRINT.
+00060              MOVE SPACES TO PRINT-LINE.
+00061              READ GRADE-FILE
+00062                  AT END STOP RUN.
+00063              MOVE STUDENT-NAME-IN TO STUDENT-NAME-OUT.
+00064              MOVE STUDENT-ID-IN TO STUDENT-ID-OUT.
+00065              MOVE STUDENT-SCORE1-IN TO STUDENT-SCORE1-OUT.
+00066              MOVE STUDENT-SCORE2-IN TO STUDENT-SCORE2-OUT.
+00067              MOVE STUDENT-GRADE-IN TO STUDENT-GRADE-OUT.
+00068              WRITE PRINT-LINE.
+00069         *
+
+00070          CLOSING.
+00071              CLOSE GRADE-FILE, PRINT-FILE.
+   3        GRADE0LI        15.05.04        MAY 18,1924
+
+
+
+*STATISTICS*     SOURCE RECORDS =    71     DATA DIVISION STATEMENTS =    23     PROCEDURE DIVISION STATEMENTS =    15
+*OPTIONS IN EFFECT*     SIZE =  131072  BUF =   12288  LINECNT = 57  SPACE1, FLAGW,   SEQ,   SOURCE
+*OPTIONS IN EFFECT*     NODMAP, NOPMAP, NOCLIST, NOSUPMAP, NOXREF, NOSXREF,   LOAD, NODECK, QUOTE, NOTRUNC, NOFLOW
+*OPTIONS IN EFFECT*     NOTERM, NONUM, NOBATCH, NONAME, COMPILE=01, NOSTATE, NORESIDENT, NODYNAM, NOLIB, NOSYNTAX
+*OPTIONS IN EFFECT*     NOOPTIMIZE, NOSYMDMP, NOTEST,   VERB,   ZWB, SYST, NOENDJOB, NOLVL
+*OPTIONS IN EFFECT*     NOLST , NOFDECK,NOCDECK, LCOL2,  L120,   DUMP ,   ADV , NOPRINT,
+*OPTIONS IN EFFECT*     NOCOUNT, NOVBSUM, NOVBREF, LANGLVL(2)
+
+                                                      VS LOADER
+
+OPTIONS USED - PRINT,NOMAP,NOLET,CALL,RES,NOTERM,SIZE=307200,NAME=**GO
+
+  TOTAL LENGTH     1FE0
+  ENTRY ADDRESS   9C010
+
+
+
+          JOSHUA WATSON                 447-221                       38    38    A
+          LAUREN RODRIGUEZ              123-456                       27    27    B
+          NATHAN SCOTT                  654-852                       63    63    C
+          BENJAMIN PEREZ                159-753                       87    87    D
+          ASHLEY WARD                   612-782                       65    65    E
+          EVELYN BELL                   963-852                       14    14    F
+          GABRIEL ANDERSON              854-698                       23    23    A
+          TIMOTHY CARTER                654-852                       25    25    B
+          OLIVER MOORE                  112-254                       34    34    C
+          OWEN WOOD                     787-584                       65    65    D
+          ROBERT ROSS                   446-187                       47    47    E
+          HEATHER THOMAS                268-471                       58    58    F
+          MEGAN SANDERS                 784-885                       59    59    A
+          AUBREY COLLINS                456-753                       88    88    B
+          JAMES WASHINGTON              574-698                       63    63    C
+          SIMON SULSER                  456-587                       48    48    D
+          JAMES BROWN                   875-965                       66    66    E
+          KEVIN BLUE                    212-236                       57    57    F
+          HUGH GRANT                    985-654                       75    75    A
+          JAME KING                     265-121                       23    23    B
+
+                         SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN   CCCCCCCCCC   OOOOOOOOOOOO
+                       SSSSSSSSSSSS   IIIIIIIIII   MMM      MMM  OOOOOOOOOOOO  NNN       NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+                      SS        SS       II       MMMM    MMMM  OO        OO  NNNN      NN  CC        CC  OO        OO
+                     SS                 II       MM MM  MM MM  OO        OO  NN NN     NN  CC            OO        OO
+                    SSS                II       MM  MMMM  MM  OO        OO  NN  NN    NN  CC            OO        OO
+                    SSSSSSSSS         II       MM   MM   MM  OO        OO  NN   NN   NN  CC            OO        OO
+                    SSSSSSSSS        II       MM        MM  OO        OO  NN    NN  NN  CC            OO        OO
+                          SSS       II       MM        MM  OO        OO  NN     NN NN  CC            OO        OO
+                          SS       II       MM        MM  OO        OO  NN      NNNN  CC            OO        OO
+               SS        SS       II       MM        MM  OO        OO  NN       NNN  CC        CC  OO        OO
+              SSSSSSSSSSSS   IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+              SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN         N   CCCCCCCCCC   OOOOOOOOOOOO
+
+
+
+                    JJJJJJJJJJ   2222222222     00000000          444                                  AAAAAAAAAA
+                    JJJJJJJJJJ  222222222222   0000000000        4444                                 AAAAAAAAAAAA
+                        JJ      22        22  00      0000      44 44                                 AA        AA
+                        JJ                22  00     00 00     44  44                                 AA        AA
+                        JJ                22  00    00  00    44   44                                 AA        AA
+                        JJ               22   00   00   00   44444444444                              AAAAAAAAAAAA
+                        JJ             22     00  00    00  444444444444                              AAAAAAAAAAAA
+                        JJ           22       00 00     00         44                                 AA        AA
+                  JJ    JJ         22         0000      00         44                                 AA        AA
+                  JJ    JJ       22           000       00         44                                 AA        AA
+                  JJJJJJJJ      222222222222   0000000000          44                                 AA        AA
+                   JJJJJJ       222222222222    00000000           44                                 AA        AA
+
+
+****A   END   JOB  204  SIMONCO   GRADE LIST            ROOM        3.05.04 PM 18 MAY 24  PRINTER1  SYS HMVS  JOB  204   END   A****

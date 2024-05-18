@@ -3,7 +3,9 @@
 //SYSIN   DD *
        IDENTIFICATION DIVISION.
        PROGRAM-ID. BIBLIOGRAPHY-LIST.
-       AUTHOR. SIMON SULSER.
+       AUTHOR. SIMON SULSER.                                            
+       DATE-WRITTEN. MAY 18,1924.                                          
+       DATE-COMPILED. 
       *
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.

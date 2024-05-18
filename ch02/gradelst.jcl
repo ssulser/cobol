@@ -3,9 +3,9 @@
 //SYSIN   DD *
        IDENTIFICATION DIVISION.
        PROGRAM-ID. GRADE-LIST.
-       AUTHOR. SIMON SULSER.
-       DATE-WRITTEN. 24/05/18.
-       DATE-COMPILED.
+       AUTHOR. SIMON SULSER.                                            
+       DATE-WRITTEN. MAY 18,1924.                                          
+       DATE-COMPILED. 
       *
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
@@ -93,7 +93,7 @@
 875-965   JAMES BROWN                   66   66   E
 212-236   KEVIN BLUE                    57   57   F
 985-654   HUGH GRANT                    75   75   A
-265-121   JAME KING                     23   23   B
+265-121   JAMES KING                    23   23   B
 /*
 //GO.OUTPUT DD SYSOUT=*,
 //             DCB=(RECFM=FBA,LRECL=132,BLKSIZE=13200)
