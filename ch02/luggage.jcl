@@ -67,18 +67,15 @@
        INITIALIZE.                                                      
            OPEN INPUT LUGGAGE-FILE,                                     
                 OUTPUT PRINT-FILE.                                      
+           READ LUGGAGE-FILE AT END MOVE "Y" TO FLAG-EOF.
       *                                                                 
        READ-AND-PROCESS.                                                
            MOVE SPACES TO PRT-NAME, PRT-ADDRESS.                        
-           READ LUGGAGE-FILE AT END MOVE "Y" TO FLAG-EOF.
-           IF FLAG-EOF EQUAL "N" THEN               
-               MOVE LUG-NAME-IN TO PRT-NAME                                
-               WRITE PRINT-LINE FROM PRT-NAME-LINE AFTER 2 LINES           
-               MOVE LUG-ADDRESS-IN TO PRT-ADDRESS                          
-               WRITE PRINT-LINE FROM PRT-ADDRESS-LINE
-           ELSE
-               MOVE "          *** END OF LIST ***" TO PRINT-LINE
-               WRITE PRINT-LINE AFTER 2 LINES.                      
+           MOVE LUG-NAME-IN TO PRT-NAME                                
+           WRITE PRINT-LINE FROM PRT-NAME-LINE AFTER 2 LINES           
+           MOVE LUG-ADDRESS-IN TO PRT-ADDRESS                          
+           WRITE PRINT-LINE FROM PRT-ADDRESS-LINE
+           READ LUGGAGE-FILE AT END MOVE "Y" TO FLAG-EOF.                   
       *                                                                 
        CLOSING.                                                         
            CLOSE LUGGAGE-FILE, PRINT-FILE.                              
