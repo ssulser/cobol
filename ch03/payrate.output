@@ -1,0 +1,391 @@
+                         SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN   CCCCCCCCCC   OOOOOOOOOOOO
+                       SSSSSSSSSSSS   IIIIIIIIII   MMM      MMM  OOOOOOOOOOOO  NNN       NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+                      SS        SS       II       MMMM    MMMM  OO        OO  NNNN      NN  CC        CC  OO        OO
+                     SS                 II       MM MM  MM MM  OO        OO  NN NN     NN  CC            OO        OO
+                    SSS                II       MM  MMMM  MM  OO        OO  NN  NN    NN  CC            OO        OO
+                    SSSSSSSSS         II       MM   MM   MM  OO        OO  NN   NN   NN  CC            OO        OO
+                    SSSSSSSSS        II       MM        MM  OO        OO  NN    NN  NN  CC            OO        OO
+                          SSS       II       MM        MM  OO        OO  NN     NN NN  CC            OO        OO
+                          SS       II       MM        MM  OO        OO  NN      NNNN  CC            OO        OO
+               SS        SS       II       MM        MM  OO        OO  NN       NNN  CC        CC  OO        OO
+              SSSSSSSSSSSS   IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+              SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN         N   CCCCCCCCCC   OOOOOOOOOOOO
+
+
+
+                    JJJJJJJJJJ   2222222222         444     777777777777                               AAAAAAAAAA
+                    JJJJJJJJJJ  222222222222       4444     77777777777                               AAAAAAAAAAAA
+                        JJ      22        22      44 44     77      77                                AA        AA
+                        JJ                22     44  44            77                                 AA        AA
+                        JJ                22    44   44           77                                  AA        AA
+                        JJ               22    44444444444       77                                   AAAAAAAAAAAA
+                        JJ             22     444444444444       77                                   AAAAAAAAAAAA
+                        JJ           22              44          77                                   AA        AA
+                  JJ    JJ         22                44          77                                   AA        AA
+                  JJ    JJ       22                  44          77                                   AA        AA
+                  JJJJJJJJ      222222222222         44          77                                   AA        AA
+                   JJJJJJ       222222222222         44          77                                   AA        AA
+
+
+****A  START  JOB  247  SIMONCO   PAYRATE               ROOM       10.45.50 AM 19 MAY 24  PRINTER1  SYS HMVS  JOB  247  START  A****
+                                                J E S 2   J O B   L O G
+
+
+10.45.50 JOB  247  $HASP373 SIMONCO  STARTED - INIT  1 - CLASS A - SYS HMVS
+10.45.50 JOB  247  IEF403I SIMONCO - STARTED - TIME=10.45.50
+10.45.50 JOB  247  IEFACTRT COB     /IKFCBL00/00:00:00.07/00:00:00.14/00000/SIMONCO
+10.45.50 JOB  247  IEFACTRT GO      /LOADER  /00:00:00.02/00:00:00.06/00000/SIMONCO
+10.45.50 JOB  247  IEF404I SIMONCO - ENDED - TIME=10.45.50
+10.45.50 JOB  247  $HASP395 SIMONCO  ENDED
+
+
+------ JES2 JOB STATISTICS ------
+
+
+ 19 MAY 24 JOB EXECUTION DATE
+
+
+       150 CARDS READ
+
+
+       282 SYSOUT PRINT RECORDS
+
+
+         0 SYSOUT PUNCH RECORDS
+
+
+      0.00 MINUTES EXECUTION TIME
+    1     //SIMONCO JOB (1),'PAYRATE',CLASS=A,MSGCLASS=A                          JOB  247
+    2     //COBOL  EXEC PROC=COB2UCG,SYSOUT='*'
+    3     XXCOBUCG PROC SYSOUT=A                                                  00000100
+          ***     PROC FOR COBOL OS/VS 1.2.4                                      00000200
+    4     XXCOB    EXEC  PGM=IKFCBL00                                             00000300
+    5     XXSTEPLIB  DD  DSN=SIMON.COB.VSCOLIB,DISP=SHR                           00000400
+    6     XXSYSPRINT DD  SYSOUT=&SYSOUT                                           00000500
+    7     XXSYSPUNCH DD  SYSOUT=B                                                 00000600
+    8     XXSYSUT1   DD  UNIT=SYSDA,SPACE=(CYL,(1,1))                             00000700
+    9     XXSYSUT2   DD  UNIT=SYSDA,SPACE=(CYL,(1,1))                             00000800
+   10     XXSYSUT3   DD  UNIT=SYSDA,SPACE=(CYL,(1,1))                             00000900
+   11     XXSYSUT4   DD  UNIT=SYSDA,SPACE=(CYL,(1,1))                             00001000
+   12     XXSYSLIN   DD  DSN=&&LOADSET,UNIT=SYSDA,DISP=(MOD,PASS),                00001100
+          XX             SPACE=(TRK,(3,3)),DCB=BLKSIZE=800                        00001200
+   13     //SYSIN   DD *
+   14     XXGO     EXEC  PGM=LOADER,COND=(5,LT,COB)                               00001300
+   15     XXSYSLIN   DD  DSN=&&LOADSET,DISP=(OLD,DELETE)                          00001400
+   16     XXSYSLOUT  DD  SYSOUT=&SYSOUT                                           00001500
+   17     XXSYSOUT   DD  SYSOUT=&SYSOUT                                           00001600
+   18     XXSYSLIB   DD  DSN=SIMON.COB.VSCLLIB,DISP=SHR                           00001700
+   19     //GO.INPUT DD *
+   20     //GO.OUTPUT DD SYSOUT=*,
+          //             DCB=(RECFM=FBA,LRECL=132,BLKSIZE=13200)
+ STMT NO. MESSAGE
+-
+    6     IEF653I SUBSTITUTION JCL - SYSOUT=*
+   16     IEF653I SUBSTITUTION JCL - SYSOUT=*
+   17     IEF653I SUBSTITUTION JCL - SYSOUT=*
+IEF236I ALLOC. FOR SIMONCO COB COBOL
+IEF237I 180  ALLOCATED TO STEPLIB
+IEF237I 180  ALLOCATED TO SYS00244
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IEF237I JES2 ALLOCATED TO SYSPUNCH
+IEF237I 251  ALLOCATED TO SYSUT1
+IEF237I 252  ALLOCATED TO SYSUT2
+IEF237I 251  ALLOCATED TO SYSUT3
+IEF237I 252  ALLOCATED TO SYSUT4
+IEF237I 251  ALLOCATED TO SYSLIN
+IEF237I JES2 ALLOCATED TO SYSIN
+IEF142I SIMONCO COB COBOL - STEP WAS EXECUTED - COND CODE 0000
+IEF285I   SIMON.COB.VSCOLIB                            KEPT          *--------0
+IEF285I   VOL SER NOS= PUB000.
+IEF285I   UCPUB000                                     KEPT          *--------0
+IEF285I   VOL SER NOS= PUB000.
+IEF285I   JES2.JOB00247.SO0103                         SYSOUT
+IEF285I   JES2.JOB00247.SO0104                         SYSOUT
+IEF285I   SYS24140.T104550.RA000.SIMONCO.R0000001      DELETED       *-------10
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   SYS24140.T104550.RA000.SIMONCO.R0000002      DELETED       *--------8
+IEF285I   VOL SER NOS= WORK01.
+IEF285I   SYS24140.T104550.RA000.SIMONCO.R0000003      DELETED       *-------14
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   SYS24140.T104550.RA000.SIMONCO.R0000004      DELETED       *--------8
+IEF285I   VOL SER NOS= WORK01.
+IEF285I   SYS24140.T104550.RA000.SIMONCO.LOADSET       PASSED        *-------11
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   JES2.JOB00247.SI0101                         SYSIN
+IEF373I STEP /COB     / START 24140.1045
+IEF374I STEP /COB     / STOP  24140.1045 CPU    0MIN 00.06SEC SRB    0MIN 00.01SEC VIRT   136K SYS   216K
+**** JOB NAME: SIMONCO  JOBCARD READ 2024/140 10:45:50 370/ 84 VS2 R03.8 HMVS ******************************************************
+*                                                                                                                                  *
+*  STEP NUMBER:          1  USER CORE:        136K  START TIME:   10:45:50     CPU TIME:    00:00:00.07  ACTIVE TIME:  00:00:00.09 *
+*  STEP NAME:     COB       SYSTEM CORE:      216K  STOP TIME:    10:45:50     SRB TIME:    00:00:00.01  ALLOC TIME:   10:45:50    *
+*  PROGRAM NAME:  IKFCBL00  REGION SIZE:      512K  ELAPSED TIME: 00:00:00.14  TCB TIME:    00:00:00.06  PROGRAM LOAD: 10:45:50    *
+*  CONDITION CODE:   00000  PERFORMANCE GROUP: 004                                                                                 *
+*                           JES2 CARDS:         13       SERVICE UNITS  PAGES IN/OUT  # SWAPS  PAGES SWAP IN/OUT  VIO PAGES IN/OUT *
+*                                                                  322      0 /    0        0           0 /    0          0 /    0 *
+*                                                                                                                                  *
+*   ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT   *
+*   180/D3380         0  180/D3380         0  251/D3350        10  252/D3350         8  251/D3350        14  252/D3350         8   *
+*   251/D3350        11                                                                                                            *
+************************************************************************************************************************************
+IEF236I ALLOC. FOR SIMONCO GO COBOL
+IEF237I 251  ALLOCATED TO SYSLIN
+IEF237I JES2 ALLOCATED TO SYSLOUT
+IEF237I JES2 ALLOCATED TO SYSOUT
+IEF237I 180  ALLOCATED TO SYSLIB
+IEF237I 180  ALLOCATED TO SYS00246
+IEF237I JES2 ALLOCATED TO INPUT
+IEF237I JES2 ALLOCATED TO OUTPUT
+IEF142I SIMONCO GO COBOL - STEP WAS EXECUTED - COND CODE 0000
+IEF285I   SYS24140.T104550.RA000.SIMONCO.LOADSET       DELETED       *-------12
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   JES2.JOB00247.SO0105                         SYSOUT
+IEF285I   JES2.JOB00247.SO0106                         SYSOUT
+IEF285I   SIMON.COB.VSCLLIB                            KEPT          *-------80
+IEF285I   VOL SER NOS= PUB000.
+IEF285I   UCPUB000                                     KEPT          *--------0
+IEF285I   VOL SER NOS= PUB000.
+IEF285I   JES2.JOB00247.SI0102                         SYSIN
+IEF285I   JES2.JOB00247.SO0107                         SYSOUT
+IEF373I STEP /GO      / START 24140.1045
+IEF374I STEP /GO      / STOP  24140.1045 CPU    0MIN 00.02SEC SRB    0MIN 00.00SEC VIRT   332K SYS   216K
+************************************************************************************************************************************
+*                                                                                                                                  *
+*  STEP NUMBER:          2  USER CORE:        332K  START TIME:   10:45:50     CPU TIME:    00:00:00.02  ACTIVE TIME:  00:00:00.04 *
+*  STEP NAME:     GO        SYSTEM CORE:      216K  STOP TIME:    10:45:50     SRB TIME:    00:00:00.00  ALLOC TIME:   10:45:50    *
+*  PROGRAM NAME:  LOADER    REGION SIZE:      512K  ELAPSED TIME: 00:00:00.06  TCB TIME:    00:00:00.02  PROGRAM LOAD: 10:45:50    *
+*  CONDITION CODE:   00000  PERFORMANCE GROUP: 004                                                                                 *
+*                           JES2 CARDS:          0       SERVICE UNITS  PAGES IN/OUT  # SWAPS  PAGES SWAP IN/OUT  VIO PAGES IN/OUT *
+*                                                                  504      0 /    0        0           0 /    0          0 /    0 *
+*                                                                                                                                  *
+*   ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT   *
+*   251/D3350        12  180/D3380        80  180/D3380         0                                                                  *
+************************************************************************************************************************************
+IEF375I  JOB /SIMONCO / START 24140.1045
+IEF376I  JOB /SIMONCO / STOP  24140.1045 CPU    0MIN 00.08SEC SRB    0MIN 00.01SEC
+PP 5740-CB1 RELEASE 2.4                              IBM OS/VS COBOL  JULY  1, 1982          10.45.50  DATE MAY 19,1924
+
+
+   1                        10.45.50        MAY 19,1924
+
+
+00001          IDENTIFICATION DIVISION.
+00002          PROGRAM-ID. PAYRATE2.
+00003          AUTHOR. SIMON SULSER.
+00004          DATE-WRITTEN. MAY 18,1924.
+00005          DATE-COMPILED. MAY 19,1924.
+00006         *
+00007          ENVIRONMENT DIVISION.
+00008          CONFIGURATION SECTION.
+00009          SOURCE-COMPUTER. IBM-370.
+00010          OBJECT-COMPUTER. IBM-370.
+00011         *
+00012          INPUT-OUTPUT SECTION.
+00013          FILE-CONTROL.
+00014              SELECT PAY-FILE ASSIGN TO UT-S-INPUT.
+00015              SELECT PRINT-FILE ASSIGN TO UT-S-OUTPUT.
+00016         *
+00017          DATA DIVISION.
+00018          FILE SECTION.
+00019          FD  PAY-FILE
+00020              LABEL RECORD IS OMITTED.
+00021          01  PAY-RECORD.
+00022              05 EMP-POLICY-NR            PIC X(10).
+00023              05 EMP-COMPANY              PIC X(30).
+00024              05 EMP-AMOUNT               PIC 9(7).
+00025              05 FILLER                   PIC XX.
+00026              05 EMP-FACTOR1              PIC 9V99.
+00027              05 FILLER                   PIC XX.
+
+
+00028              05 EMP-FACTOR2              PIC 9V99.
+00029              05 FILLER                   PIC XX.
+00030              05 EMP-FACTOR3              PIC 9V99.
+00031              05 FILLER                   PIC X(18).
+00032         *
+00033          FD  PRINT-FILE
+00034              LABEL RECORD IS OMITTED.
+00035          01  PRINT-LINE                  PIC X(132).
+00036         *
+00037          WORKING-STORAGE SECTION.
+00038         *
+00039          77  FLAG-EOF                    PIC X           VALUE "N".
+00040              88 IS-EOF                                   VALUE "Y".
+00041         *
+00042          01  REPORT-HEADER.
+00043              05 FILLER                   PIC X(51)       VALUE SPACES.
+00044              05 FILLER                   PIC X(30)       VALUE
+00045                    "ANALYSIS OF INSURANCE COVERAGE".
+00046         *
+00047          01  REPORT-TITLE1.
+00048              05 FILLER                   PIC X(20)       VALUE SPACES.
+00049              05 FILLER                   PIC X(06)       VALUE "POLICY".
+00050              05 FILLER                   PIC X(50)       VALUE SPACES.
+00051              05 FILLER                   PIC X(42)       VALUE
+00052                  "PAYMENT IF      PAYMENT IF      PAYMENT IF".
+00053         *
+00054          01  REPORT-TITLE2.
+   2        PAYRATE2        10.45.50        MAY 19,1924
+
+
+00055              05 FILLER                   PIC X(20)       VALUE SPACES.
+
+
+00056              05 FILLER                   PIC X(06)       VALUE "NUMBER".
+00057              05 FILLER                   PIC X(09)       VALUE SPACES.
+00058              05 FILLER                   PIC X(17)       VALUE
+00059                  "INSURANCE COMPANY".
+00060              05 FILLER                   PIC X(22)       VALUE SPACES.
+00061              05 FILLER                   PIC X(43)       VALUE
+00062                  "NON-ACCIDENTAL     DEATH BY        DEATH IN".
+00063         *
+
+
+00064          01  REPORT-TITLE3.
+00065              05 FILLER                   PIC X(78)       VALUE SPACES.
+00066              05 FILLER                   PIC X(42)       VALUE
+00067                  "DEATH          ACCIDENT     COMMON CARRIER".
+00068         *
+00069          01  REPORT-LINE.
+00070              05 FILLER                   PIC X(20)       VALUE SPACES.
+00071              05 RPT-POLICY-NR            PIC X(10).
+00072              05 FILLER                   PIC X(05)       VALUE SPACES.
+00073              05 RPT-COMPANY              PIC X(30).
+00074              05 FILLER                   PIC X(04)       VALUE SPACES.
+00075              05 RPT-AMOUNT1              PIC Z,ZZZ,ZZ9.99.
+00076              05 FILLER                   PIC X(06)       VALUE SPACES.
+00077              05 RPT-AMOUNT2              PIC Z,ZZZ,ZZ9.99.
+00078              05 FILLER                   PIC X(06)       VALUE SPACES.
+00079              05 RPT-AMOUNT3              PIC Z,ZZZ,ZZ9.99.
+00080         *
+00081          01  REPORT-TOTAL.
+00082              05  FILLER                  PIC X(55)       VALUE SPACES.
+00083              05  FILLER                  PIC X(12)       VALUE
+00084                  "TOTAL PAID  ".
+00085              05  RPT-TOTAL1              PIC $ZZ,Z(3),ZZ9.99BBBB.
+00086              05  RPT-TOTAL2              PIC $ZZ,Z(3),ZZ9.99BBBB.
+00087              05  RPT-TOTAL3              PIC $ZZ,Z(3),ZZ9.99.
+00088         *
+00089          01  INSURANCE-CALCULATIONS.
+00090              05  TOTAL-AMOUNT1           PIC 9(7)V99     VALUE 0.0.
+00091              05  TOTAL-AMOUNT2           PIC 9(7)V99     VALUE 0.0.
+00092              05  TOTAL-AMOUNT3           PIC 9(7)V99     VALUE 0.0.
+
+
+00093              05  ACTUAL-AMOUNT1          PIC 9(6)V99     VALUE 0.0.
+00094              05  ACTUAL-AMOUNT2          PIC 9(6)V99     VALUE 0.0.
+00095              05  ACTUAL-AMOUNT3          PIC 9(6)V99     VALUE 0.0.
+00096         *
+00097          PROCEDURE DIVISION.
+00098          000-MAIN.
+00099              PERFORM INITIALIZATION.
+00100              PERFORM READ-AND-PRINT UNTIL IS-EOF.
+00101              PERFORM PRINT-TOTAL.
+00102              PERFORM CLOSING.
+00103              STOP RUN.
+00104         *
+00105          INITIALIZATION.
+00106              OPEN INPUT  PAY-FILE,
+00107                   OUTPUT PRINT-FILE.
+00108              WRITE PRINT-LINE FROM REPORT-HEADER.
+00109              WRITE PRINT-LINE FROM REPORT-TITLE1 AFTER 2 LINES.
+00110              WRITE PRINT-LINE FROM REPORT-TITLE2.
+00111              WRITE PRINT-LINE FROM REPORT-TITLE3.
+   3        PAYRATE2        10.45.50        MAY 19,1924
+
+
+00112              MOVE SPACE TO PRINT-LINE.
+00113              WRITE PRINT-LINE AFTER 2 LINES.
+00114              READ PAY-FILE AT END MOVE "Y" TO FLAG-EOF.
+00115         *
+00116          READ-AND-PRINT.
+00117              MOVE EMP-POLICY-NR TO RPT-POLICY-NR.
+00118              MOVE EMP-COMPANY TO RPT-COMPANY.
+00119              MULTIPLY EMP-FACTOR1 BY EMP-AMOUNT GIVING ACTUAL-AMOUNT1.
+00120              MULTIPLY EMP-FACTOR2 BY EMP-AMOUNT GIVING ACTUAL-AMOUNT2.
+
+
+00121              MULTIPLY EMP-FACTOR3 BY EMP-AMOUNT GIVING ACTUAL-AMOUNT3.
+
+
+00122              ADD ACTUAL-AMOUNT1 TO TOTAL-AMOUNT1.
+00123              ADD ACTUAL-AMOUNT2 TO TOTAL-AMOUNT2.
+00124              ADD ACTUAL-AMOUNT3 TO TOTAL-AMOUNT3.
+00125              MOVE ACTUAL-AMOUNT1 TO RPT-AMOUNT1.
+00126              MOVE ACTUAL-AMOUNT2 TO RPT-AMOUNT2.
+00127              MOVE ACTUAL-AMOUNT3 TO RPT-AMOUNT3.
+00128              WRITE PRINT-LINE FROM REPORT-LINE.
+00129              READ PAY-FILE AT END MOVE "Y" TO FLAG-EOF.
+00130         *
+00131          PRINT-TOTAL.
+00132              MOVE TOTAL-AMOUNT1 TO RPT-TOTAL1.
+00133              MOVE TOTAL-AMOUNT2 TO RPT-TOTAL2.
+00134              MOVE TOTAL-AMOUNT3 TO RPT-TOTAL3.
+00135              WRITE PRINT-LINE FROM REPORT-TOTAL AFTER 2 LINES.
+00136         *
+00137          CLOSING.
+00138              CLOSE PAY-FILE, PRINT-FILE.
+   4        PAYRATE2        10.45.50        MAY 19,1924
+
+
+
+*STATISTICS*     SOURCE RECORDS =   138     DATA DIVISION STATEMENTS =    58     PROCEDURE DIVISION STATEMENTS =    33
+*OPTIONS IN EFFECT*     SIZE =  131072  BUF =   12288  LINECNT = 57  SPACE1, FLAGW,   SEQ,   SOURCE
+*OPTIONS IN EFFECT*     NODMAP, NOPMAP, NOCLIST, NOSUPMAP, NOXREF, NOSXREF,   LOAD, NODECK, QUOTE, NOTRUNC, NOFLOW
+*OPTIONS IN EFFECT*     NOTERM, NONUM, NOBATCH, NONAME, COMPILE=01, NOSTATE, NORESIDENT, NODYNAM, NOLIB, NOSYNTAX
+*OPTIONS IN EFFECT*     NOOPTIMIZE, NOSYMDMP, NOTEST,   VERB,   ZWB, SYST, NOENDJOB, NOLVL
+*OPTIONS IN EFFECT*     NOLST , NOFDECK,NOCDECK, LCOL2,  L120,   DUMP ,   ADV , NOPRINT,
+*OPTIONS IN EFFECT*     NOCOUNT, NOVBSUM, NOVBREF, LANGLVL(2)
+
+                                                      VS LOADER
+
+OPTIONS USED - PRINT,NOMAP,NOLET,CALL,RES,NOTERM,SIZE=307200,NAME=**GO
+
+  TOTAL LENGTH     32D8
+  ENTRY ADDRESS   9C010
+
+
+
+                                                   ANALYSIS OF INSURANCE COVERAGE
+
+                    POLICY                                                  PAYMENT IF      PAYMENT IF      PAYMENT IF
+                    NUMBER         INSURANCE COMPANY                      NON-ACCIDENTAL     DEATH BY        DEATH IN
+                                                                              DEATH          ACCIDENT     COMMON CARRIER
+
+
+                    1975.21.21     WORLD BEST INSURANCE INCORP.              0.00         12,000.00         22,000.00
+                    2015.87.85     ZURICH LIFE INSURANCE AG                  0.00        136,000.00        169,150.00
+                    1989.21.89     AMSTERDAM SECURE LIFE                 6,000.00         69,000.00        105,000.00
+                    1999.78.65     NEW YORK BEST LIFE INCORP.            1,087.50          9,062.50         14,572.50
+
+                                                       TOTAL PAID  $     7,087.50    $   226,062.50    $   310,722.50
+
+                         SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN   CCCCCCCCCC   OOOOOOOOOOOO
+                       SSSSSSSSSSSS   IIIIIIIIII   MMM      MMM  OOOOOOOOOOOO  NNN       NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+                      SS        SS       II       MMMM    MMMM  OO        OO  NNNN      NN  CC        CC  OO        OO
+                     SS                 II       MM MM  MM MM  OO        OO  NN NN     NN  CC            OO        OO
+                    SSS                II       MM  MMMM  MM  OO        OO  NN  NN    NN  CC            OO        OO
+                    SSSSSSSSS         II       MM   MM   MM  OO        OO  NN   NN   NN  CC            OO        OO
+                    SSSSSSSSS        II       MM        MM  OO        OO  NN    NN  NN  CC            OO        OO
+                          SSS       II       MM        MM  OO        OO  NN     NN NN  CC            OO        OO
+                          SS       II       MM        MM  OO        OO  NN      NNNN  CC            OO        OO
+               SS        SS       II       MM        MM  OO        OO  NN       NNN  CC        CC  OO        OO
+              SSSSSSSSSSSS   IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+              SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN         N   CCCCCCCCCC   OOOOOOOOOOOO
+
+
+
+                    JJJJJJJJJJ   2222222222         444     777777777777                               AAAAAAAAAA
+                    JJJJJJJJJJ  222222222222       4444     77777777777                               AAAAAAAAAAAA
+                        JJ      22        22      44 44     77      77                                AA        AA
+                        JJ                22     44  44            77                                 AA        AA
+                        JJ                22    44   44           77                                  AA        AA
+                        JJ               22    44444444444       77                                   AAAAAAAAAAAA
+                        JJ             22     444444444444       77                                   AAAAAAAAAAAA
+                        JJ           22              44          77                                   AA        AA
+                  JJ    JJ         22                44          77                                   AA        AA
+                  JJ    JJ       22                  44          77                                   AA        AA
+                  JJJJJJJJ      222222222222         44          77                                   AA        AA
+                   JJJJJJ       222222222222         44          77                                   AA        AA
+
+
+****A   END   JOB  247  SIMONCO   PAYRATE               ROOM       10.45.50 AM 19 MAY 24  PRINTER1  SYS HMVS  JOB  247   END   A****

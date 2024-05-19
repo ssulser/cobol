@@ -1,106 +1,79 @@
        IDENTIFICATION DIVISION.                                         
-       PROGRAM-ID. BIBLIO.                                         
+       PROGRAM-ID. PAYRATE2.                                             
        AUTHOR. SIMON SULSER.                                            
-       DATE-WRITTEN. MAY 18,1924.                                          
+       DATE-WRITTEN. MAY 19,1924.                                          
        DATE-COMPILED.                                                   
       *                                                                 
        ENVIRONMENT DIVISION.                                            
        CONFIGURATION SECTION.                                           
        SOURCE-COMPUTER. IBM-370.                                        
        OBJECT-COMPUTER. IBM-370.                                        
+      *                                                                 
        INPUT-OUTPUT SECTION.                                            
        FILE-CONTROL.                                                    
-           SELECT INPUT-FILE   ASSIGN TO UT-S-INPUT.                       
-           SELECT PRINT-FILE   ASSIGN TO UT-S-OUTPUT.                     
+           SELECT PAY-FILE ASSIGN TO UT-S-INPUT.                       
+           SELECT PRINT-FILE ASSIGN TO UT-S-OUTPUT.                     
       *                                                                 
        DATA DIVISION.                                                   
        FILE SECTION.                                                    
-       FD  INPUT-FILE                                                    
+       FD  PAY-FILE                                                    
            LABEL RECORD IS OMITTED.                                     
-       01  INPUT-RECORD.
-           05 BOOK-TITLE               PIC X(30).
-           05 BOOK-AUTHOR-NAME         PIC X(25).
-           05 BOOK-PUBLISHER           PIC X(21).
-           05 BOOK-PRICE               PIC 99V99.
+       01  PAY-RECORD.                                                 
+           05 EMP-POLICY-NR            PIC X(10).
+           05 EMP-COMPANY              PIC X(20).                       
+           05 EMP-AMOUNT               PIC 9(7).
+           05 FILLER                   PIC XX.                       
+           05 EMP-FACTOR-1             PIC 9V99.
+           05 FILLER                   PIC XX.                       
+           05 EMP-FACTOR-2             PIC 9V99.
+           05 FILLER                   PIC XX.                       
+           05 EMP-FACTOR-3             PIC 9V99.
+           05 FILLER                   PIC X(17).
       *                                                                 
        FD  PRINT-FILE                                                   
            LABEL RECORD IS OMITTED.                                     
-       01  PRINT-LINE                  PIC X(132).                      
+       01  PRINT-LINE                  PIC X(132).                    
       *                                                                 
        WORKING-STORAGE SECTION.                                         
       *
-       77  MORE-CARDS                  PIC X(3)        VALUE "YES".
-       77  SUM-OF-BOOK-PRICES          PIC 999V99      VALUE ZERO.
+       77  FLAG-EOF                    PIC X         VALUE "N".
+           88 IS-EOF                                 VALUE "Y".
       *
-       01  REPORT-TITLE.
-           05 FILLER                   PIC X(47)       VALUE SPACES.
-           05 FILLER                   PIC X(37)       VALUE
-                "B I B L I O G R A P H Y   R E P O R T".
-           05 FILLER                   PIC X(48)       VALUE SPACES.
+       01  REPORT-HEADER.
+           05 FILLER                   PIC X(52)     VALUE SPACES.
+           05 FILLER                   PIC X(30)     VALUE
+                 "ANALYSIS OF INSURANCE COVERAGE".
       *
-       01  COLUMN-HEADER.
-           05 FILLER                   PIC X(19)       VALUE SPACES.
-           05 FILLER                   PIC X(6)        VALUE "AUTHOR".
-           05 FILLER                   PIC X(24)       VALUE SPACES.
-           05 FILLER                   PIC X(5)        VALUE "TITLE".
-           05 FILLER                   PIC X(30)       VALUE SPACES.
-           05 FILLER                   PIC X(11)       VALUE SPACES.
-           05 FILLER                   PIC X(11)       VALUE
-                "PUBLISHER".
-           05 FILLER                   PIC X(14)       VALUE SPACES.
-           05 FILLER                   PIC X(05)       VALUE "PRICE".
-           05 FILLER                   PIC X(18)       VALUE SPACES.
+       01  REPORT-TITLE1.
+           05 FILLER                   PIC X(20)     VALUE SPACES.
+           05 FILLER                   PIC X(58)     VALUE
+           "POLICY                           PAYMENT IF     PAYMENT IF".
       *
-       01  BIBLIOGRAPHY-DETAIL-LINE.
-           05 FILLER                   PIC X(19)       VALUE SPACES.
-           05 BOOK-AUTHOR-NAME         PIC X(25).
-           05 FILLER                   PIC X(05)       VALUE SPACES.
-           05 BOOK-TITLE               PIC X(30).
-           05 FILLER                   PIC X(05)       VALUE SPACES.
-           05 BOOK-PUBLISHER           PIC X(21).
-           05 FILLER                   PIC X(04)       VALUE SPACES.
-           05 BOOK-PRICE               PIC $Z9.99.
-           05 FILLER                   PIC X(17).
+       01  REPORT-TITLE2.
+           05 FILLER                   PIC X(20)     VALUE SPACES.
+           05 FILLER                   PIC X(57)     VALUE
+           "NUMBER     INSURANCE COMPANY   NON-ACCIDENTAL    DEATH BY".
       *
-       01  TOTAL-LINE.
-           05 FILLER                   PIC X(07)       VALUE SPACES.
-           05 FILLER                   PIC X(21)       VALUE
-                "TOTAL PRICE OF BOOKS ".
-           05 TOTAL-PRICE-OF-BOOKS     PIC $ZZ9.99.
-           05 FILLER                   PIC X(17)       VALUE SPACES.
+       01  REPORT-TITLE3.
+           05 FILLER                   PIC X(20)     VALUE SPACES.
+           05 FILLER                   PIC X(57)     VALUE
+           "                                  DEATH          ACCIDENT".
       *
        PROCEDURE DIVISION.                                              
-       MAINLINE-CONTROL-ROUTINE.
+       000-MAIN.                                                        
            PERFORM INITIALIZATION.                                      
-           PERFORM PROCESS-PRINT-READ UNTIL MORE-CARDS EQUAL TO "NO".
-           PERFORM PRINT-TOTALS-AND-CLOSE.                              
+           PERFORM READ-AND-PRINT.                             
+           PERFORM CLOSING.                                             
            STOP RUN.                                                    
       *                                                                 
        INITIALIZATION.                                                  
-           OPEN INPUT  INPUT-FILE,                                        
-                OUTPUT PRINT-FILE.
-           WRITE PRINT-LINE FROM REPORT-TITLE
-                BEFORE ADVANCING 2 LINES.
-           WRITE PRINT-LINE FROM COLUMN-HEADER
-                BEFORE ADVANCING 3 LINES.
-           READ INPUT-FILE AT END
-                MOVE "NO" TO MORE-CARDS.
+           OPEN OUTPUT PRINT-FILE.                                      
       *                                                                 
-       PROCESS-PRINT-READ.                                                  
-           MOVE BOOK-TITLE IN INPUT-RECORD TO
-                BOOK-TITLE IN BIBLIOGRAPHY-DETAIL-LINE.
-           MOVE BOOK-AUTHOR-NAME IN INPUT-RECORD  TO
-                BOOK-AUTHOR-NAME IN BIBLIOGRAPHY-DETAIL-LINE.
-           MOVE BOOK-PUBLISHER IN INPUT-RECORD TO
-                BOOK-PUBLISHER IN BIBLIOGRAPHY-DETAIL-LINE.
-           MOVE BOOK-PRICE IN INPUT-RECORD TO 
-                BOOK-PRICE IN BIBLIOGRAPHY-DETAIL-LINE.
-           WRITE PRINT-LINE FROM BIBLIOGRAPHY-DETAIL-LINE
-                AFTER ADVANCING 1 LINE.
-           ADD BOOK-PRICE IN INPUT-RECORD TO SUM-OF-BOOK-PRICES.
-           READ INPUT-FILE AT END MOVE "NO" TO MORE-CARDS.
+       READ-AND-PRINT.                                                  
+           WRITE PRINT-LINE FROM REPORT-HEADER.
+           WRITE PRINT-LINE FROM REPORT-TITLE1 AFTER 2 LINES.
+           WRITE PRINT-LINE FROM REPORT-TITLE2 AFTER 1 LINE.
+           WRITE PRINT-LINE FROM REPORT-TITLE3 AFTER 1 LINE.                  
       *                                                                 
-       PRINT-TOTALS-AND-CLOSE.
-           MOVE SUM-OF-BOOK-PRICES TO TOTAL-PRICE-OF-BOOKS.
-           WRITE PRINT-LINE FROM TOTAL-LINE AFTER ADVANCING 2 LINES.            
-           CLOSE INPUT-FILE, PRINT-FILE.
+       CLOSING.                                                         
+           CLOSE PRINT-FILE.

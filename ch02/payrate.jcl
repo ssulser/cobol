@@ -14,14 +14,14 @@
       *                                                                 
        INPUT-OUTPUT SECTION.                                            
        FILE-CONTROL.                                                    
-           SELECT GRADE-FILE ASSIGN TO UT-S-INPUT.                       
+           SELECT PAY-FILE ASSIGN TO UT-S-INPUT.                       
            SELECT PRINT-FILE ASSIGN TO UT-S-OUTPUT.                     
       *                                                                 
        DATA DIVISION.                                                   
        FILE SECTION.                                                    
-       FD  GRADE-FILE                                                    
+       FD  PAY-FILE                                                    
            LABEL RECORD IS OMITTED.                                     
-       01  GRADE-RECORD.                                                 
+       01  PAY-RECORD.                                                 
            05  EMP-NAME-IN             PIC X(25).                       
            05  EMP-ID-IN               PIC X(10).                       
            05  EMP-DEPARTEMENT-IN      PIC X(15).                       
@@ -50,12 +50,12 @@
            STOP RUN.                                                    
       *                                                                 
        INITIALIZATION.                                                  
-           OPEN INPUT GRADE-FILE,                                        
+           OPEN INPUT PAY-FILE,                                        
                 OUTPUT PRINT-FILE.                                      
       *                                                                 
        READ-AND-PRINT.                                                  
            MOVE SPACES TO PRINT-LINE.                                   
-           READ GRADE-FILE                                               
+           READ PAY-FILE                                               
                AT END STOP RUN.                                         
            MOVE EMP-NAME-IN TO EMP-NAME-OUT.                            
            MOVE EMP-ID-IN TO EMP-ID-OUT.                                
@@ -64,7 +64,7 @@
            WRITE PRINT-LINE.                                            
       *                                                                 
        CLOSING.                                                         
-           CLOSE GRADE-FILE, PRINT-FILE.                                 
+           CLOSE PAY-FILE, PRINT-FILE.                                 
 /*                                                                      
 //GO.INPUT DD *                                                         
 JOSHUA WATSON            447-221-88BUDGET CONTROL 4856                  

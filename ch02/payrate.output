@@ -13,30 +13,30 @@
 
 
 
-                    JJJJJJJJJJ   2222222222     00000000    555555555555                               AAAAAAAAAA
-                    JJJJJJJJJJ  222222222222   0000000000   555555555555                              AAAAAAAAAAAA
-                        JJ      22        22  00      0000  55                                        AA        AA
-                        JJ                22  00     00 00  55                                        AA        AA
-                        JJ                22  00    00  00  55                                        AA        AA
-                        JJ               22   00   00   00  555555555                                 AAAAAAAAAAAA
-                        JJ             22     00  00    00  5555555555                                AAAAAAAAAAAA
-                        JJ           22       00 00     00           55                               AA        AA
-                  JJ    JJ         22         0000      00            55                              AA        AA
-                  JJ    JJ       22           000       00            55                              AA        AA
-                  JJJJJJJJ      222222222222   0000000000   555555555555                              AA        AA
-                   JJJJJJ       222222222222    00000000    55555555555                               AA        AA
+                    JJJJJJJJJJ   2222222222        11        2222222222                                AAAAAAAAAA
+                    JJJJJJJJJJ  222222222222      111       222222222222                              AAAAAAAAAAAA
+                        JJ      22        22     1111       22        22                              AA        AA
+                        JJ                22       11                 22                              AA        AA
+                        JJ                22       11                 22                              AA        AA
+                        JJ               22        11                22                               AAAAAAAAAAAA
+                        JJ             22          11              22                                 AAAAAAAAAAAA
+                        JJ           22            11            22                                   AA        AA
+                  JJ    JJ         22              11          22                                     AA        AA
+                  JJ    JJ       22                11        22                                       AA        AA
+                  JJJJJJJJ      222222222222   1111111111   222222222222                              AA        AA
+                   JJJJJJ       222222222222   1111111111   222222222222                              AA        AA
 
 
-****A  START  JOB  205  SIMONCO   PAYRATE               ROOM        3.08.26 PM 18 MAY 24  PRINTER1  SYS HMVS  JOB  205  START  A****
+****A  START  JOB  212  SIMONCO   PAYRATE               ROOM        9.51.22 PM 18 MAY 24  PRINTER1  SYS HMVS  JOB  212  START  A****
                                                 J E S 2   J O B   L O G
 
 
-15.08.26 JOB  205  $HASP373 SIMONCO  STARTED - INIT  1 - CLASS A - SYS HMVS
-15.08.26 JOB  205  IEF403I SIMONCO - STARTED - TIME=15.08.26
-15.08.26 JOB  205  IEFACTRT COB     /IKFCBL00/00:00:00.06/00:00:00.13/00000/SIMONCO
-15.08.26 JOB  205  IEFACTRT GO      /LOADER  /00:00:00.02/00:00:00.06/00000/SIMONCO
-15.08.26 JOB  205  IEF404I SIMONCO - ENDED - TIME=15.08.26
-15.08.26 JOB  205  $HASP395 SIMONCO  ENDED
+21.51.22 JOB  212  $HASP373 SIMONCO  STARTED - INIT  1 - CLASS A - SYS HMVS
+21.51.22 JOB  212  IEF403I SIMONCO - STARTED - TIME=21.51.22
+21.51.22 JOB  212  IEFACTRT COB     /IKFCBL00/00:00:00.06/00:00:00.15/00000/SIMONCO
+21.51.22 JOB  212  IEFACTRT GO      /LOADER  /00:00:00.04/00:00:00.07/00000/SIMONCO
+21.51.22 JOB  212  IEF404I SIMONCO - ENDED - TIME=21.51.22
+21.51.22 JOB  212  $HASP395 SIMONCO  ENDED
 
 
 ------ JES2 JOB STATISTICS ------
@@ -55,7 +55,7 @@
 
 
       0.00 MINUTES EXECUTION TIME
-    1     //SIMONCO JOB (1),'PAYRATE',CLASS=A,MSGCLASS=A                          JOB  205
+    1     //SIMONCO JOB (1),'PAYRATE',CLASS=A,MSGCLASS=A                          JOB  212
     2     //COBOL  EXEC PROC=COB2UCG,SYSOUT='*'
     3     XXCOBUCG PROC SYSOUT=A                                                  00000100
           ***     PROC FOR COBOL OS/VS 1.2.4                                      00000200
@@ -86,87 +86,87 @@
    17     IEF653I SUBSTITUTION JCL - SYSOUT=*
 IEF236I ALLOC. FOR SIMONCO COB COBOL
 IEF237I 180  ALLOCATED TO STEPLIB
-IEF237I 180  ALLOCATED TO SYS00092
+IEF237I 180  ALLOCATED TO SYS00120
 IEF237I JES2 ALLOCATED TO SYSPRINT
 IEF237I JES2 ALLOCATED TO SYSPUNCH
-IEF237I 251  ALLOCATED TO SYSUT1
-IEF237I 252  ALLOCATED TO SYSUT2
-IEF237I 252  ALLOCATED TO SYSUT3
+IEF237I 252  ALLOCATED TO SYSUT1
+IEF237I 251  ALLOCATED TO SYSUT2
+IEF237I 251  ALLOCATED TO SYSUT3
 IEF237I 251  ALLOCATED TO SYSUT4
-IEF237I 251  ALLOCATED TO SYSLIN
+IEF237I 252  ALLOCATED TO SYSLIN
 IEF237I JES2 ALLOCATED TO SYSIN
 IEF142I SIMONCO COB COBOL - STEP WAS EXECUTED - COND CODE 0000
 IEF285I   SIMON.COB.VSCOLIB                            KEPT          *--------0
 IEF285I   VOL SER NOS= PUB000.
 IEF285I   UCPUB000                                     KEPT          *--------0
 IEF285I   VOL SER NOS= PUB000.
-IEF285I   JES2.JOB00205.SO0103                         SYSOUT
-IEF285I   JES2.JOB00205.SO0104                         SYSOUT
-IEF285I   SYS24139.T150826.RA000.SIMONCO.R0000001      DELETED       *--------6
-IEF285I   VOL SER NOS= WORK00.
-IEF285I   SYS24139.T150826.RA000.SIMONCO.R0000002      DELETED       *--------6
+IEF285I   JES2.JOB00212.SO0103                         SYSOUT
+IEF285I   JES2.JOB00212.SO0104                         SYSOUT
+IEF285I   SYS24139.T215122.RA000.SIMONCO.R0000001      DELETED       *--------6
 IEF285I   VOL SER NOS= WORK01.
-IEF285I   SYS24139.T150826.RA000.SIMONCO.R0000003      DELETED       *-------12
+IEF285I   SYS24139.T215122.RA000.SIMONCO.R0000002      DELETED       *--------6
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   SYS24139.T215122.RA000.SIMONCO.R0000003      DELETED       *-------12
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   SYS24139.T215122.RA000.SIMONCO.R0000004      DELETED       *--------6
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   SYS24139.T215122.RA000.SIMONCO.LOADSET       PASSED        *--------8
 IEF285I   VOL SER NOS= WORK01.
-IEF285I   SYS24139.T150826.RA000.SIMONCO.R0000004      DELETED       *--------6
-IEF285I   VOL SER NOS= WORK00.
-IEF285I   SYS24139.T150826.RA000.SIMONCO.LOADSET       PASSED        *--------8
-IEF285I   VOL SER NOS= WORK00.
-IEF285I   JES2.JOB00205.SI0101                         SYSIN
-IEF373I STEP /COB     / START 24139.1508
-IEF374I STEP /COB     / STOP  24139.1508 CPU    0MIN 00.05SEC SRB    0MIN 00.01SEC VIRT   136K SYS   212K
-**** JOB NAME: SIMONCO  JOBCARD READ 2024/139 15:08:26 370/ 84 VS2 R03.8 HMVS ******************************************************
+IEF285I   JES2.JOB00212.SI0101                         SYSIN
+IEF373I STEP /COB     / START 24139.2151
+IEF374I STEP /COB     / STOP  24139.2151 CPU    0MIN 00.05SEC SRB    0MIN 00.01SEC VIRT   136K SYS   212K
+**** JOB NAME: SIMONCO  JOBCARD READ 2024/139 21:51:22 370/ 84 VS2 R03.8 HMVS ******************************************************
 *                                                                                                                                  *
-*  STEP NUMBER:          1  USER CORE:        136K  START TIME:   15:08:26     CPU TIME:    00:00:00.06  ACTIVE TIME:  00:00:00.08 *
-*  STEP NAME:     COB       SYSTEM CORE:      212K  STOP TIME:    15:08:26     SRB TIME:    00:00:00.01  ALLOC TIME:   15:08:26    *
-*  PROGRAM NAME:  IKFCBL00  REGION SIZE:      512K  ELAPSED TIME: 00:00:00.13  TCB TIME:    00:00:00.05  PROGRAM LOAD: 15:08:26    *
+*  STEP NUMBER:          1  USER CORE:        136K  START TIME:   21:51:22     CPU TIME:    00:00:00.06  ACTIVE TIME:  00:00:00.09 *
+*  STEP NAME:     COB       SYSTEM CORE:      212K  STOP TIME:    21:51:22     SRB TIME:    00:00:00.01  ALLOC TIME:   21:51:22    *
+*  PROGRAM NAME:  IKFCBL00  REGION SIZE:      512K  ELAPSED TIME: 00:00:00.15  TCB TIME:    00:00:00.05  PROGRAM LOAD: 21:51:22    *
 *  CONDITION CODE:   00000  PERFORMANCE GROUP: 004                                                                                 *
 *                           JES2 CARDS:          6       SERVICE UNITS  PAGES IN/OUT  # SWAPS  PAGES SWAP IN/OUT  VIO PAGES IN/OUT *
-*                                                                  241      0 /    0        0           0 /    0          0 /    0 *
+*                                                                  243      0 /    0        0           0 /    0          0 /    0 *
 *                                                                                                                                  *
 *   ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT   *
-*   180/D3380         0  180/D3380         0  251/D3350         6  252/D3350         6  252/D3350        12  251/D3350         6   *
-*   251/D3350         8                                                                                                            *
+*   180/D3380         0  180/D3380         0  252/D3350         6  251/D3350         6  251/D3350        12  251/D3350         6   *
+*   252/D3350         8                                                                                                            *
 ************************************************************************************************************************************
 IEF236I ALLOC. FOR SIMONCO GO COBOL
-IEF237I 251  ALLOCATED TO SYSLIN
+IEF237I 252  ALLOCATED TO SYSLIN
 IEF237I JES2 ALLOCATED TO SYSLOUT
 IEF237I JES2 ALLOCATED TO SYSOUT
 IEF237I 180  ALLOCATED TO SYSLIB
-IEF237I 180  ALLOCATED TO SYS00094
+IEF237I 180  ALLOCATED TO SYS00122
 IEF237I JES2 ALLOCATED TO INPUT
 IEF237I JES2 ALLOCATED TO OUTPUT
 IEF142I SIMONCO GO COBOL - STEP WAS EXECUTED - COND CODE 0000
-IEF285I   SYS24139.T150826.RA000.SIMONCO.LOADSET       DELETED       *--------9
-IEF285I   VOL SER NOS= WORK00.
-IEF285I   JES2.JOB00205.SO0105                         SYSOUT
-IEF285I   JES2.JOB00205.SO0106                         SYSOUT
+IEF285I   SYS24139.T215122.RA000.SIMONCO.LOADSET       DELETED       *--------9
+IEF285I   VOL SER NOS= WORK01.
+IEF285I   JES2.JOB00212.SO0105                         SYSOUT
+IEF285I   JES2.JOB00212.SO0106                         SYSOUT
 IEF285I   SIMON.COB.VSCLLIB                            KEPT          *-------62
 IEF285I   VOL SER NOS= PUB000.
 IEF285I   UCPUB000                                     KEPT          *--------0
 IEF285I   VOL SER NOS= PUB000.
-IEF285I   JES2.JOB00205.SI0102                         SYSIN
-IEF285I   JES2.JOB00205.SO0107                         SYSOUT
-IEF373I STEP /GO      / START 24139.1508
-IEF374I STEP /GO      / STOP  24139.1508 CPU    0MIN 00.02SEC SRB    0MIN 00.00SEC VIRT   332K SYS   216K
+IEF285I   JES2.JOB00212.SI0102                         SYSIN
+IEF285I   JES2.JOB00212.SO0107                         SYSOUT
+IEF373I STEP /GO      / START 24139.2151
+IEF374I STEP /GO      / STOP  24139.2151 CPU    0MIN 00.03SEC SRB    0MIN 00.01SEC VIRT   332K SYS   216K
 ************************************************************************************************************************************
 *                                                                                                                                  *
-*  STEP NUMBER:          2  USER CORE:        332K  START TIME:   15:08:26     CPU TIME:    00:00:00.02  ACTIVE TIME:  00:00:00.04 *
-*  STEP NAME:     GO        SYSTEM CORE:      216K  STOP TIME:    15:08:26     SRB TIME:    00:00:00.00  ALLOC TIME:   15:08:26    *
-*  PROGRAM NAME:  LOADER    REGION SIZE:      512K  ELAPSED TIME: 00:00:00.06  TCB TIME:    00:00:00.02  PROGRAM LOAD: 15:08:26    *
+*  STEP NUMBER:          2  USER CORE:        332K  START TIME:   21:51:22     CPU TIME:    00:00:00.04  ACTIVE TIME:  00:00:00.04 *
+*  STEP NAME:     GO        SYSTEM CORE:      216K  STOP TIME:    21:51:22     SRB TIME:    00:00:00.01  ALLOC TIME:   21:51:22    *
+*  PROGRAM NAME:  LOADER    REGION SIZE:      512K  ELAPSED TIME: 00:00:00.07  TCB TIME:    00:00:00.03  PROGRAM LOAD: 21:51:22    *
 *  CONDITION CODE:   00000  PERFORMANCE GROUP: 004                                                                                 *
 *                           JES2 CARDS:          1       SERVICE UNITS  PAGES IN/OUT  # SWAPS  PAGES SWAP IN/OUT  VIO PAGES IN/OUT *
-*                                                                  400      0 /    0        0           0 /    0          0 /    0 *
+*                                                                  402      0 /    0        0           0 /    0          0 /    0 *
 *                                                                                                                                  *
 *   ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT   *
-*   251/D3350         9  180/D3380        62  180/D3380         0                                                                  *
+*   252/D3350         9  180/D3380        62  180/D3380         0                                                                  *
 ************************************************************************************************************************************
-IEF375I  JOB /SIMONCO / START 24139.1508
-IEF376I  JOB /SIMONCO / STOP  24139.1508 CPU    0MIN 00.07SEC SRB    0MIN 00.01SEC
-PP 5740-CB1 RELEASE 2.4                              IBM OS/VS COBOL  JULY  1, 1982          15.08.26  DATE MAY 18,1924
+IEF375I  JOB /SIMONCO / START 24139.2151
+IEF376I  JOB /SIMONCO / STOP  24139.2151 CPU    0MIN 00.08SEC SRB    0MIN 00.02SEC
+PP 5740-CB1 RELEASE 2.4                              IBM OS/VS COBOL  JULY  1, 1982          21.51.22  DATE MAY 18,1924
 
 
-   1                        15.08.26        MAY 18,1924
+   1                        21.51.22        MAY 18,1924
 
 
 00001          IDENTIFICATION DIVISION.
@@ -182,14 +182,14 @@ IEF376I  JOB /SIMONCO / STOP  24139.1508 CPU    0MIN 00.07SEC SRB    0MIN 00.01S
 00011         *
 00012          INPUT-OUTPUT SECTION.
 00013          FILE-CONTROL.
-00014              SELECT GRADE-FILE ASSIGN TO UT-S-INPUT.
+00014              SELECT PAY-FILE ASSIGN TO UT-S-INPUT.
 00015              SELECT PRINT-FILE ASSIGN TO UT-S-OUTPUT.
 00016         *
 00017          DATA DIVISION.
 00018          FILE SECTION.
-00019          FD  GRADE-FILE
+00019          FD  PAY-FILE
 00020              LABEL RECORD IS OMITTED.
-00021          01  GRADE-RECORD.
+00021          01  PAY-RECORD.
 00022              05  EMP-NAME-IN             PIC X(25).
 00023              05  EMP-ID-IN               PIC X(10).
 00024              05  EMP-DEPARTEMENT-IN      PIC X(15).
@@ -219,15 +219,15 @@ IEF376I  JOB /SIMONCO / STOP  24139.1508 CPU    0MIN 00.07SEC SRB    0MIN 00.01S
 00047              STOP RUN.
 00048         *
 00049          INITIALIZATION.
-00050              OPEN INPUT GRADE-FILE,
+00050              OPEN INPUT PAY-FILE,
 00051                   OUTPUT PRINT-FILE.
 00052         *
 00053          READ-AND-PRINT.
 00054              MOVE SPACES TO PRINT-LINE.
-   2        PAYRATE         15.08.26        MAY 18,1924
+   2        PAYRATE         21.51.22        MAY 18,1924
 
 
-00055              READ GRADE-FILE
+00055              READ PAY-FILE
 
 00056                  AT END STOP RUN.
 00057              MOVE EMP-NAME-IN TO EMP-NAME-OUT.
@@ -237,8 +237,8 @@ IEF376I  JOB /SIMONCO / STOP  24139.1508 CPU    0MIN 00.07SEC SRB    0MIN 00.01S
 00061              WRITE PRINT-LINE.
 00062         *
 00063          CLOSING.
-00064              CLOSE GRADE-FILE, PRINT-FILE.
-   3        PAYRATE         15.08.26        MAY 18,1924
+00064              CLOSE PAY-FILE, PRINT-FILE.
+   3        PAYRATE         21.51.22        MAY 18,1924
 
 
 
@@ -291,18 +291,18 @@ OPTIONS USED - PRINT,NOMAP,NOLET,CALL,RES,NOTERM,SIZE=307200,NAME=**GO
 
 
 
-                    JJJJJJJJJJ   2222222222     00000000    555555555555                               AAAAAAAAAA
-                    JJJJJJJJJJ  222222222222   0000000000   555555555555                              AAAAAAAAAAAA
-                        JJ      22        22  00      0000  55                                        AA        AA
-                        JJ                22  00     00 00  55                                        AA        AA
-                        JJ                22  00    00  00  55                                        AA        AA
-                        JJ               22   00   00   00  555555555                                 AAAAAAAAAAAA
-                        JJ             22     00  00    00  5555555555                                AAAAAAAAAAAA
-                        JJ           22       00 00     00           55                               AA        AA
-                  JJ    JJ         22         0000      00            55                              AA        AA
-                  JJ    JJ       22           000       00            55                              AA        AA
-                  JJJJJJJJ      222222222222   0000000000   555555555555                              AA        AA
-                   JJJJJJ       222222222222    00000000    55555555555                               AA        AA
+                    JJJJJJJJJJ   2222222222        11        2222222222                                AAAAAAAAAA
+                    JJJJJJJJJJ  222222222222      111       222222222222                              AAAAAAAAAAAA
+                        JJ      22        22     1111       22        22                              AA        AA
+                        JJ                22       11                 22                              AA        AA
+                        JJ                22       11                 22                              AA        AA
+                        JJ               22        11                22                               AAAAAAAAAAAA
+                        JJ             22          11              22                                 AAAAAAAAAAAA
+                        JJ           22            11            22                                   AA        AA
+                  JJ    JJ         22              11          22                                     AA        AA
+                  JJ    JJ       22                11        22                                       AA        AA
+                  JJJJJJJJ      222222222222   1111111111   222222222222                              AA        AA
+                   JJJJJJ       222222222222   1111111111   222222222222                              AA        AA
 
 
-****A   END   JOB  205  SIMONCO   PAYRATE               ROOM        3.08.26 PM 18 MAY 24  PRINTER1  SYS HMVS  JOB  205   END   A****
+****A   END   JOB  212  SIMONCO   PAYRATE               ROOM        9.51.22 PM 18 MAY 24  PRINTER1  SYS HMVS  JOB  212   END   A****

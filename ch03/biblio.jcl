@@ -2,7 +2,7 @@
 //COBOL  EXEC PROC=COB2UCG,SYSOUT='*'
 //SYSIN   DD *
        IDENTIFICATION DIVISION.                                         
-       PROGRAM-ID. BIBLIO.                                         
+       PROGRAM-ID. BIBLIO2.                                         
        AUTHOR. SIMON SULSER.                                            
        DATE-WRITTEN. MAY 18,1924.                                          
        DATE-COMPILED.                                                   
