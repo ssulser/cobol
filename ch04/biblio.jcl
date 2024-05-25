@@ -1,3 +1,6 @@
+//SIMONCO JOB (1),'BIBLIOGRAPHY REPORT',CLASS=A,MSGCLASS=A
+//COBOL  EXEC PROC=COB2UCG,SYSOUT='*'
+//SYSIN   DD *
        IDENTIFICATION DIVISION.
        PROGRAM-ID. BIBLIOGRAPHY-ORDER-LIST.
        AUTHOR. SIMON SULSER.
@@ -10,20 +13,20 @@
        SOURCE-COMPUTER. IBM-370.
        OBJECT-COMPUTER. IBM-370.
       *
-       SPECIAL-NAMES. 
+       SPECIAL-NAMES.
            C01 IS TOP-OF-PAGE.
       *
-       INPUT-OUTPUT SECTION. 
-       FILE-CONTROL. 
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
            SELECT BIBLIOGRAPHY-CARD-FILE
               ASSIGN TO UT-S-INPUT.
            SELECT  BIBLIOGRAPHY-LIST-FILE
               ASSIGN TO UT-S-OUTPUT.
       *
       *
-       DATA DIVISION. 
+       DATA DIVISION.
       *
-       FILE SECTION. 
+       FILE SECTION.
        FD  BIBLIOGRAPHY-CARD-FILE
            LABEL RECORD OMITTED.
        01  BIBLIOGRAPHY-CARD.
@@ -37,7 +40,7 @@
            LABEL RECORD OMITTED.
        01  PRINT-LINE                  PIC X(132).
       *
-       WORKING-STORAGE SECTION. 
+       WORKING-STORAGE SECTION.
       *
        77  MORE-CARDS                  PIC X(03)     VALUE "YES".
        77  LINE-COUNT                  PIC 99        VALUE ZEROS.
@@ -53,7 +56,7 @@
       *
        01  COLUMN-HEADING.
            05 FILLER                   PIC X(02)     VALUE SPACES.
-           05 FILLER                   PIC X(09)     VALUE 
+           05 FILLER                   PIC X(09)     VALUE
               "PUBLISHER".
            05 FILLER                   PIC X(13)     VALUE SPACES.
            05 FILLER                   PIC X(06)     VALUE "AUTHOR".
@@ -78,13 +81,13 @@
            05 BOOK-PRICE               PIC $$9.99.
            05 FILLER                   PIC X(07)     VALUE SPACES.
            05 ORDER-QUANTITY           PIC Z9.
-           05 FILLER                   PIC X(07)     VALUE SPACES.
-           05 TOTAL-AMOUNT             PIC $$$9.99.
-           05 FILLER                   PIC X(15)     VALUE SPACES.
+           05 FILLER                   PIC X(06)     VALUE SPACES.
+           05 TOTAL-AMOUNT             PIC $$$$9.99.
+           05 FILLER                   PIC X(02)     VALUE SPACES.
            05 ERROR-MESSAGE            PIC X(15).
       *
        01  PUBLISHER-NAME-LINE.
-           05 FILLER                   PIC X(12)     VALUE SPACES.
+           05 FILLER                   PIC X(02)     VALUE SPACES.
            05 PUBLISHER-NAME           PIC X(20).
            05 FILLER                   PIC X(110)    VALUE SPACES.
       *
@@ -106,10 +109,10 @@
        INITIALIZATION.
            OPEN INPUT BIBLIOGRAPHY-CARD-FILE.
            OPEN OUTPUT BIBLIOGRAPHY-LIST-FILE.
-           READ BIBLIOGRAPHY-CARD-FILE  AT END
+           READ BIBLIOGRAPHY-CARD-FILE AT END
               MOVE "NO" TO MORE-CARDS.
            IF MORE-CARDS = "YES" THEN
-              MOVE BOOK-PUBLISHER OF BIBLIOGRAPHY-CARD 
+              MOVE BOOK-PUBLISHER OF BIBLIOGRAPHY-CARD
                  TO PUBLISHER-NAME
               PERFORM NEW-PAGE-ROUTINE.
       *
@@ -129,7 +132,7 @@
            ELSE
               MOVE ZEROS TO TOTAL-PRICE-PER-LINE.
            MOVE TOTAL-PRICE-PER-LINE TO TOTAL-AMOUNT.
-           WRITE PRINT-LINE FROM ORDER-DETAIL-LINE.
+           WRITE PRINT-LINE FROM ORDER-DETAIL-LINE AFTER 1 LINE.
            ADD 1 TO LINE-COUNT.
            READ BIBLIOGRAPHY-CARD-FILE AT END
               MOVE "NO" TO MORE-CARDS.
@@ -157,9 +160,11 @@
                                 BIBLIOGRAPHY-CARD
                              MOVE "INVALID QTY" TO ERROR-MESSAGE
                           ELSE
-                             IF ORDER-QUANTITY OF BIBLIOGRAPHY-CARD 
+                             IF ORDER-QUANTITY OF BIBLIOGRAPHY-CARD
                                    = ZEROS THEN
-                                MOVE "INVALID QTY" TO ERROR-MESSAGE.
+                                MOVE "INVALID QTY" TO ERROR-MESSAGE
+                             ELSE
+                                MOVE SPACES TO ERROR-MESSAGE.
       *
        NEW-PUBLISHER-ROUTINE.
            MOVE " PUBLISHER SUBTOTAL:" TO OUTPUT-TOTAL-NAME.
@@ -183,8 +188,24 @@
        PRINT-TOTALS-AND-CLOSE.
            MOVE " PUBLISHER SUBTOTAL:" TO OUTPUT-TOTAL-NAME.
            MOVE SUM-PRICES-BY-PUBLISHER TO ORDER-TOTAL.
-           WRITE PRINT-LINE FROM ORDER-TOTAL-LINE  AFTER 2 LINES.
+           WRITE PRINT-LINE FROM ORDER-TOTAL-LINE AFTER 2 LINES.
            MOVE " OVERALL ORDER TOTAL:" TO OUTPUT-TOTAL-NAME.
            MOVE SUM-PRICES-OVER-ALL TO ORDER-TOTAL.
            WRITE PRINT-LINE FROM ORDER-TOTAL-LINE AFTER 2 LINES.
            CLOSE BIBLIOGRAPHY-CARD-FILE, BIBLIOGRAPHY-LIST-FILE.
+/*
+//GO.INPUT DD *
+DO ANDROIDS DREAM OF SHEEP    PHILIP K. DICK          THIEME              123420
+COOKNG FOR FUN                WENDY DOUGLAS           THIEME              548233
+DON'T KNOW WHO WROTE THIS                             THIEME              100525
+THE HITCHHIKER'S GUIDE        DOUGLAS ADAMS           ALEXA               456719
+AND ANOTHER BOOK JUST SO      BENNY KING MEYERS       ALEXA               458756
+EVERYTHING FOR FREE !!!       JAMES FREE KAHN         ALEXA
+SOMETHING WICKED THIS WAY     RAY BRADBURY            REDERER             789522
+WHAT SHOULD I DO NEXT...      JIMMY BRIXTON           REDERER             875521
+                              ANNA WENDENER           REDERER             635241
+NOONE WANTS TO PUBLISH MY BK  IRINA SAD                                   111111
+/*
+//GO.OUTPUT DD SYSOUT=*,
+//             DCB=(RECFM=FBA,LRECL=132,BLKSIZE=13200)
+//

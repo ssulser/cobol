@@ -1,0 +1,493 @@
+                         SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN   CCCCCCCCCC   OOOOOOOOOOOO
+                       SSSSSSSSSSSS   IIIIIIIIII   MMM      MMM  OOOOOOOOOOOO  NNN       NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+                      SS        SS       II       MMMM    MMMM  OO        OO  NNNN      NN  CC        CC  OO        OO
+                     SS                 II       MM MM  MM MM  OO        OO  NN NN     NN  CC            OO        OO
+                    SSS                II       MM  MMMM  MM  OO        OO  NN  NN    NN  CC            OO        OO
+                    SSSSSSSSS         II       MM   MM   MM  OO        OO  NN   NN   NN  CC            OO        OO
+                    SSSSSSSSS        II       MM        MM  OO        OO  NN    NN  NN  CC            OO        OO
+                          SSS       II       MM        MM  OO        OO  NN     NN NN  CC            OO        OO
+                          SS       II       MM        MM  OO        OO  NN      NNNN  CC            OO        OO
+               SS        SS       II       MM        MM  OO        OO  NN       NNN  CC        CC  OO        OO
+              SSSSSSSSSSSS   IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+              SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN         N   CCCCCCCCCC   OOOOOOOOOOOO
+
+
+
+                    JJJJJJJJJJ   2222222222    9999999999     00000000                                 AAAAAAAAAA
+                    JJJJJJJJJJ  222222222222  999999999999   0000000000                               AAAAAAAAAAAA
+                        JJ      22        22  99        99  00      0000                              AA        AA
+                        JJ                22  99        99  00     00 00                              AA        AA
+                        JJ                22  99        99  00    00  00                              AA        AA
+                        JJ               22   999999999999  00   00   00                              AAAAAAAAAAAA
+                        JJ             22     999999999999  00  00    00                              AAAAAAAAAAAA
+                        JJ           22                 99  00 00     00                              AA        AA
+                  JJ    JJ         22                   99  0000      00                              AA        AA
+                  JJ    JJ       22           99        99  000       00                              AA        AA
+                  JJJJJJJJ      222222222222  999999999999   0000000000                               AA        AA
+                   JJJJJJ       222222222222   9999999999     00000000                                AA        AA
+
+
+****A   END   JOB  290  SIMONCO   BIBLIOGRAPHY REPORT   ROOM       12.14.56 PM 25 MAY 24  PRINTER1  SYS HMVS  JOB  290   END   A****
+                         SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN   CCCCCCCCCC   OOOOOOOOOOOO
+                       SSSSSSSSSSSS   IIIIIIIIII   MMM      MMM  OOOOOOOOOOOO  NNN       NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+                      SS        SS       II       MMMM    MMMM  OO        OO  NNNN      NN  CC        CC  OO        OO
+                     SS                 II       MM MM  MM MM  OO        OO  NN NN     NN  CC            OO        OO
+                    SSS                II       MM  MMMM  MM  OO        OO  NN  NN    NN  CC            OO        OO
+                    SSSSSSSSS         II       MM   MM   MM  OO        OO  NN   NN   NN  CC            OO        OO
+                    SSSSSSSSS        II       MM        MM  OO        OO  NN    NN  NN  CC            OO        OO
+                          SSS       II       MM        MM  OO        OO  NN     NN NN  CC            OO        OO
+                          SS       II       MM        MM  OO        OO  NN      NNNN  CC            OO        OO
+               SS        SS       II       MM        MM  OO        OO  NN       NNN  CC        CC  OO        OO
+              SSSSSSSSSSSS   IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+              SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN         N   CCCCCCCCCC   OOOOOOOOOOOO
+
+
+
+                    JJJJJJJJJJ   2222222222    9999999999        11                                    AAAAAAAAAA
+                    JJJJJJJJJJ  222222222222  999999999999      111                                   AAAAAAAAAAAA
+                        JJ      22        22  99        99     1111                                   AA        AA
+                        JJ                22  99        99       11                                   AA        AA
+                        JJ                22  99        99       11                                   AA        AA
+                        JJ               22   999999999999       11                                   AAAAAAAAAAAA
+                        JJ             22     999999999999       11                                   AAAAAAAAAAAA
+                        JJ           22                 99       11                                   AA        AA
+                  JJ    JJ         22                   99       11                                   AA        AA
+                  JJ    JJ       22           99        99       11                                   AA        AA
+                  JJJJJJJJ      222222222222  999999999999   1111111111                               AA        AA
+                   JJJJJJ       222222222222   9999999999    1111111111                               AA        AA
+
+
+****A  START  JOB  291  SIMONCO   BIBLIOGRAPHY REPORT   ROOM       12.15.19 PM 25 MAY 24  PRINTER1  SYS HMVS  JOB  291  START  A****
+                                                J E S 2   J O B   L O G
+
+
+12.15.19 JOB  291  $HASP373 SIMONCO  STARTED - INIT  1 - CLASS A - SYS HMVS
+12.15.19 JOB  291  IEF403I SIMONCO - STARTED - TIME=12.15.19
+12.15.19 JOB  291  IEFACTRT COB     /IKFCBL00/00:00:00.08/00:00:00.15/00000/SIMONCO
+12.15.19 JOB  291  IEFACTRT GO      /LOADER  /00:00:00.04/00:00:00.07/00000/SIMONCO
+12.15.19 JOB  291  IEF404I SIMONCO - ENDED - TIME=12.15.19
+12.15.19 JOB  291  $HASP395 SIMONCO  ENDED
+
+
+------ JES2 JOB STATISTICS ------
+
+
+ 25 MAY 24 JOB EXECUTION DATE
+
+
+       211 CARDS READ
+
+
+       349 SYSOUT PRINT RECORDS
+
+
+         0 SYSOUT PUNCH RECORDS
+
+
+      0.00 MINUTES EXECUTION TIME
+    1     //SIMONCO JOB (1),'BIBLIOGRAPHY REPORT',CLASS=A,MSGCLASS=A              JOB  291
+    2     //COBOL  EXEC PROC=COB2UCG,SYSOUT='*'
+    3     XXCOBUCG PROC SYSOUT=A                                                  00000100
+          ***     PROC FOR COBOL OS/VS 1.2.4                                      00000200
+    4     XXCOB    EXEC  PGM=IKFCBL00                                             00000300
+    5     XXSTEPLIB  DD  DSN=SIMON.COB.VSCOLIB,DISP=SHR                           00000400
+    6     XXSYSPRINT DD  SYSOUT=&SYSOUT                                           00000500
+    7     XXSYSPUNCH DD  SYSOUT=B                                                 00000600
+    8     XXSYSUT1   DD  UNIT=SYSDA,SPACE=(CYL,(1,1))                             00000700
+    9     XXSYSUT2   DD  UNIT=SYSDA,SPACE=(CYL,(1,1))                             00000800
+   10     XXSYSUT3   DD  UNIT=SYSDA,SPACE=(CYL,(1,1))                             00000900
+   11     XXSYSUT4   DD  UNIT=SYSDA,SPACE=(CYL,(1,1))                             00001000
+   12     XXSYSLIN   DD  DSN=&&LOADSET,UNIT=SYSDA,DISP=(MOD,PASS),                00001100
+          XX             SPACE=(TRK,(3,3)),DCB=BLKSIZE=800                        00001200
+   13     //SYSIN   DD *
+   14     XXGO     EXEC  PGM=LOADER,COND=(5,LT,COB)                               00001300
+   15     XXSYSLIN   DD  DSN=&&LOADSET,DISP=(OLD,DELETE)                          00001400
+   16     XXSYSLOUT  DD  SYSOUT=&SYSOUT                                           00001500
+   17     XXSYSOUT   DD  SYSOUT=&SYSOUT                                           00001600
+   18     XXSYSLIB   DD  DSN=SIMON.COB.VSCLLIB,DISP=SHR                           00001700
+   19     //GO.INPUT DD *
+   20     //GO.OUTPUT DD SYSOUT=*,
+          //             DCB=(RECFM=FBA,LRECL=132,BLKSIZE=13200)
+          //
+ STMT NO. MESSAGE
+-
+    6     IEF653I SUBSTITUTION JCL - SYSOUT=*
+   16     IEF653I SUBSTITUTION JCL - SYSOUT=*
+   17     IEF653I SUBSTITUTION JCL - SYSOUT=*
+IEF236I ALLOC. FOR SIMONCO COB COBOL
+IEF237I 180  ALLOCATED TO STEPLIB
+IEF237I 180  ALLOCATED TO SYS00046
+IEF237I JES2 ALLOCATED TO SYSPRINT
+IEF237I JES2 ALLOCATED TO SYSPUNCH
+IEF237I 252  ALLOCATED TO SYSUT1
+IEF237I 251  ALLOCATED TO SYSUT2
+IEF237I 251  ALLOCATED TO SYSUT3
+IEF237I 251  ALLOCATED TO SYSUT4
+IEF237I 252  ALLOCATED TO SYSLIN
+IEF237I JES2 ALLOCATED TO SYSIN
+IEF142I SIMONCO COB COBOL - STEP WAS EXECUTED - COND CODE 0000
+IEF285I   SIMON.COB.VSCOLIB                            KEPT          *--------0
+IEF285I   VOL SER NOS= PUB000.
+IEF285I   UCPUB000                                     KEPT          *--------0
+IEF285I   VOL SER NOS= PUB000.
+IEF285I   JES2.JOB00291.SO0103                         SYSOUT
+IEF285I   JES2.JOB00291.SO0104                         SYSOUT
+IEF285I   SYS24146.T121519.RA000.SIMONCO.R0000001      DELETED       *-------14
+IEF285I   VOL SER NOS= WORK01.
+IEF285I   SYS24146.T121519.RA000.SIMONCO.R0000002      DELETED       *-------12
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   SYS24146.T121519.RA000.SIMONCO.R0000003      DELETED       *-------14
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   SYS24146.T121519.RA000.SIMONCO.R0000004      DELETED       *--------8
+IEF285I   VOL SER NOS= WORK00.
+IEF285I   SYS24146.T121519.RA000.SIMONCO.LOADSET       PASSED        *-------13
+IEF285I   VOL SER NOS= WORK01.
+IEF285I   JES2.JOB00291.SI0101                         SYSIN
+IEF373I STEP /COB     / START 24146.1215
+IEF374I STEP /COB     / STOP  24146.1215 CPU    0MIN 00.07SEC SRB    0MIN 00.01SEC VIRT   136K SYS   212K
+**** JOB NAME: SIMONCO  JOBCARD READ 2024/146 12:15:19 370/ 84 VS2 R03.8 HMVS ******************************************************
+*                                                                                                                                  *
+*  STEP NUMBER:          1  USER CORE:        136K  START TIME:   12:15:19     CPU TIME:    00:00:00.08  ACTIVE TIME:  00:00:00.10 *
+*  STEP NAME:     COB       SYSTEM CORE:      212K  STOP TIME:    12:15:19     SRB TIME:    00:00:00.01  ALLOC TIME:   12:15:19    *
+*  PROGRAM NAME:  IKFCBL00  REGION SIZE:      512K  ELAPSED TIME: 00:00:00.15  TCB TIME:    00:00:00.07  PROGRAM LOAD: 12:15:19    *
+*  CONDITION CODE:   00000  PERFORMANCE GROUP: 004                                                                                 *
+*                           JES2 CARDS:         19       SERVICE UNITS  PAGES IN/OUT  # SWAPS  PAGES SWAP IN/OUT  VIO PAGES IN/OUT *
+*                                                                  387      0 /    0        0           0 /    0          0 /    0 *
+*                                                                                                                                  *
+*   ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT   *
+*   180/D3380         0  180/D3380         0  252/D3350        14  251/D3350        12  251/D3350        14  251/D3350         8   *
+*   252/D3350        13                                                                                                            *
+************************************************************************************************************************************
+IEF236I ALLOC. FOR SIMONCO GO COBOL
+IEF237I 252  ALLOCATED TO SYSLIN
+IEF237I JES2 ALLOCATED TO SYSLOUT
+IEF237I JES2 ALLOCATED TO SYSOUT
+IEF237I 180  ALLOCATED TO SYSLIB
+IEF237I 180  ALLOCATED TO SYS00048
+IEF237I JES2 ALLOCATED TO INPUT
+IEF237I JES2 ALLOCATED TO OUTPUT
+IEF142I SIMONCO GO COBOL - STEP WAS EXECUTED - COND CODE 0000
+IEF285I   SYS24146.T121519.RA000.SIMONCO.LOADSET       DELETED       *-------14
+IEF285I   VOL SER NOS= WORK01.
+IEF285I   JES2.JOB00291.SO0105                         SYSOUT
+IEF285I   JES2.JOB00291.SO0106                         SYSOUT
+IEF285I   SIMON.COB.VSCLLIB                            KEPT          *-------88
+IEF285I   VOL SER NOS= PUB000.
+IEF285I   UCPUB000                                     KEPT          *--------0
+IEF285I   VOL SER NOS= PUB000.
+IEF285I   JES2.JOB00291.SI0102                         SYSIN
+IEF285I   JES2.JOB00291.SO0107                         SYSOUT
+IEF373I STEP /GO      / START 24146.1215
+IEF374I STEP /GO      / STOP  24146.1215 CPU    0MIN 00.03SEC SRB    0MIN 00.01SEC VIRT   332K SYS   212K
+************************************************************************************************************************************
+*                                                                                                                                  *
+*  STEP NUMBER:          2  USER CORE:        332K  START TIME:   12:15:19     CPU TIME:    00:00:00.04  ACTIVE TIME:  00:00:00.05 *
+*  STEP NAME:     GO        SYSTEM CORE:      212K  STOP TIME:    12:15:19     SRB TIME:    00:00:00.01  ALLOC TIME:   12:15:19    *
+*  PROGRAM NAME:  LOADER    REGION SIZE:      512K  ELAPSED TIME: 00:00:00.07  TCB TIME:    00:00:00.03  PROGRAM LOAD: 12:15:19    *
+*  CONDITION CODE:   00000  PERFORMANCE GROUP: 004                                                                                 *
+*                           JES2 CARDS:          1       SERVICE UNITS  PAGES IN/OUT  # SWAPS  PAGES SWAP IN/OUT  VIO PAGES IN/OUT *
+*                                                                  557      0 /    0        0           0 /    0          0 /    0 *
+*                                                                                                                                  *
+*   ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT  ADDR/UNIT I/O COUNT   *
+*   252/D3350        14  180/D3380        88  180/D3380         0                                                                  *
+************************************************************************************************************************************
+IEF375I  JOB /SIMONCO / START 24146.1215
+IEF376I  JOB /SIMONCO / STOP  24146.1215 CPU    0MIN 00.10SEC SRB    0MIN 00.02SEC
+PP 5740-CB1 RELEASE 2.4                              IBM OS/VS COBOL  JULY  1, 1982          12.15.19  DATE MAY 25,1924
+
+
+   1                        12.15.19        MAY 25,1924
+
+
+00001          IDENTIFICATION DIVISION.
+00002          PROGRAM-ID. BIBLIOGRAPHY-ORDER-LIST.
+00003          AUTHOR. SIMON SULSER.
+00004          DATE-WRITTEN. MAY 19,1924.
+00005          DATE-COMPILED. MAY 25,1924.
+00006         *
+00007         *
+00008          ENVIRONMENT DIVISION.
+00009          CONFIGURATION SECTION.
+00010          SOURCE-COMPUTER. IBM-370.
+00011          OBJECT-COMPUTER. IBM-370.
+00012         *
+00013          SPECIAL-NAMES.
+00014              C01 IS TOP-OF-PAGE.
+00015         *
+00016          INPUT-OUTPUT SECTION.
+00017          FILE-CONTROL.
+00018              SELECT BIBLIOGRAPHY-CARD-FILE
+00019                 ASSIGN TO UT-S-INPUT.
+00020              SELECT  BIBLIOGRAPHY-LIST-FILE
+00021                 ASSIGN TO UT-S-OUTPUT.
+00022         *
+00023         *
+00024          DATA DIVISION.
+00025         *
+00026          FILE SECTION.
+00027          FD  BIBLIOGRAPHY-CARD-FILE
+
+00028              LABEL RECORD OMITTED.
+00029          01  BIBLIOGRAPHY-CARD.
+00030              05 BOOK-TITLE               PIC X(30).
+00031              05 BOOK-AUTHOR-NAME         PIC X(24).
+00032              05 BOOK-PUBLISHER           PIC X(20).
+00033              05 BOOK-PRICE               PIC 99V99.
+00034              05 ORDER-QUANTITY           PIC 99.
+00035         *
+00036          FD  BIBLIOGRAPHY-LIST-FILE
+00037              LABEL RECORD OMITTED.
+00038          01  PRINT-LINE                  PIC X(132).
+00039         *
+00040          WORKING-STORAGE SECTION.
+00041         *
+00042          77  MORE-CARDS                  PIC X(03)     VALUE "YES".
+00043          77  LINE-COUNT                  PIC 99        VALUE ZEROS.
+00044          77  SUM-PRICES-BY-PUBLISHER     PIC 9999V99   VALUE ZEROS.
+00045          77  SUM-PRICES-OVER-ALL         PIC 9999V99   VALUE ZEROS.
+00046          77  TOTAL-PRICE-PER-LINE        PIC 999V99    VALUE ZEROS.
+00047         *
+00048          01  REPORT-TITLE.
+00049              05 FILLER                   PIC X(43)     VALUE SPACES.
+00050              05 FILLER                   PIC X(45)     VALUE
+00051                 "B I B L I O G R A P H Y   O R D E R   L I S T".
+00052              05 FILLER                   PIC X(44)     VALUE SPACES.
+00053         *
+00054          01  COLUMN-HEADING.
+   2        BIBLIOGR        12.15.19        MAY 25,1924
+
+
+00055              05 FILLER                   PIC X(02)     VALUE SPACES.
+
+00056              05 FILLER                   PIC X(09)     VALUE
+00057                 "PUBLISHER".
+00058              05 FILLER                   PIC X(13)     VALUE SPACES.
+00059              05 FILLER                   PIC X(06)     VALUE "AUTHOR".
+00060              05 FILLER                   PIC X(22)     VALUE SPACES.
+00061              05 FILLER                   PIC X(05)     VALUE "TITLE".
+00062              05 FILLER                   PIC X(30)     VALUE SPACES.
+00063              05 FILLER                   PIC X(05)     VALUE "PRICE".
+
+00064              05 FILLER                   PIC X(04)     VALUE SPACES.
+00065              05 FILLER                   PIC X(08)     VALUE "QUANTITY".
+00066              05 FILLER                   PIC X(06)     VALUE SPACES.
+00067              05 FILLER                   PIC X(05)     VALUE "TOTAL".
+00068              05 FILLER                   PIC X(02)     VALUE SPACES.
+00069              05 FILLER                   PIC X(05)     VALUE "ERROR".
+00070              05 FILLER                   PIC X(10)     VALUE SPACES.
+00071         *
+00072          01  ORDER-DETAIL-LINE.
+00073              05 FILLER                   PIC X(24)     VALUE SPACES.
+00074              05 BOOK-AUTHOR-NAME         PIC X(24).
+00075              05 FILLER                   PIC X(04)     VALUE SPACES.
+00076              05 BOOK-TITLE               PIC X(30).
+00077              05 FILLER                   PIC X(04)     VALUE SPACES.
+00078              05 BOOK-PRICE               PIC $$9.99.
+00079              05 FILLER                   PIC X(07)     VALUE SPACES.
+00080              05 ORDER-QUANTITY           PIC Z9.
+00081              05 FILLER                   PIC X(06)     VALUE SPACES.
+00082              05 TOTAL-AMOUNT             PIC $$$$9.99.
+00083              05 FILLER                   PIC X(02)     VALUE SPACES.
+00084              05 ERROR-MESSAGE            PIC X(15).
+00085         *
+00086          01  PUBLISHER-NAME-LINE.
+00087              05 FILLER                   PIC X(02)     VALUE SPACES.
+00088              05 PUBLISHER-NAME           PIC X(20).
+00089              05 FILLER                   PIC X(110)    VALUE SPACES.
+00090         *
+00091          01  ORDER-TOTAL-LINE.
+00092              05 FILLER                   PIC X(81)     VALUE SPACES.
+
+00093              05 OUTPUT-TOTAL-NAME        PIC X(20).
+00094              05 FILLER                   PIC X(04)     VALUE SPACES.
+00095              05 ORDER-TOTAL              PIC $$$,$$9.99.
+00096              05 FILLER                   PIC X(17)     VALUE SPACES.
+00097         *
+00098         *
+00099          PROCEDURE DIVISION.
+00100          MAINLINE-CONTROL-ROUTINE.
+00101              PERFORM INITIALIZATION.
+00102              PERFORM PROCESS-AND-READ UNTIL MORE-CARDS = "NO".
+00103              PERFORM PRINT-TOTALS-AND-CLOSE.
+00104              STOP RUN.
+00105         *
+00106          INITIALIZATION.
+00107              OPEN INPUT BIBLIOGRAPHY-CARD-FILE.
+00108              OPEN OUTPUT BIBLIOGRAPHY-LIST-FILE.
+00109              READ BIBLIOGRAPHY-CARD-FILE AT END
+00110                 MOVE "NO" TO MORE-CARDS.
+00111              IF MORE-CARDS = "YES" THEN
+   3        BIBLIOGR        12.15.19        MAY 25,1924
+
+
+00112                 MOVE BOOK-PUBLISHER OF BIBLIOGRAPHY-CARD
+00113                    TO PUBLISHER-NAME
+00114                 PERFORM NEW-PAGE-ROUTINE.
+00115         *
+00116          PROCESS-AND-READ.
+00117              PERFORM INPUT-VALIDATION-ROUTINE.
+00118              IF BOOK-PUBLISHER OF BIBLIOGRAPHY-CARD NOT = PUBLISHER-NAME
+00119                 THEN PERFORM NEW-PUBLISHER-ROUTINE.
+00120              IF LINE-COUNT > 50 THEN
+
+00121                 PERFORM NEW-PAGE-ROUTINE.
+
+00122              MOVE CORRESPONDING BIBLIOGRAPHY-CARD TO ORDER-DETAIL-LINE.
+00123              IF ERROR-MESSAGE = SPACES THEN
+00124                 COMPUTE TOTAL-PRICE-PER-LINE = BOOK-PRICE OF
+00125                    BIBLIOGRAPHY-CARD * ORDER-QUANTITY OF BIBLIOGRAPHY-CARD
+00126                 ADD TOTAL-PRICE-PER-LINE TO SUM-PRICES-BY-PUBLISHER,
+00127                    SUM-PRICES-OVER-ALL
+00128                 MOVE TOTAL-PRICE-PER-LINE TO TOTAL-AMOUNT
+00129              ELSE
+00130                 MOVE ZEROS TO TOTAL-PRICE-PER-LINE.
+00131              MOVE TOTAL-PRICE-PER-LINE TO TOTAL-AMOUNT.
+00132              WRITE PRINT-LINE FROM ORDER-DETAIL-LINE AFTER 1 LINE.
+00133              ADD 1 TO LINE-COUNT.
+00134              READ BIBLIOGRAPHY-CARD-FILE AT END
+00135                 MOVE "NO" TO MORE-CARDS.
+00136         *
+00137          INPUT-VALIDATION-ROUTINE.
+00138              IF BOOK-PUBLISHER OF BIBLIOGRAPHY-CARD = SPACES THEN
+00139                 MOVE "NO PUBLISHER" TO ERROR-MESSAGE
+00140              ELSE
+00141                 IF BOOK-TITLE OF BIBLIOGRAPHY-CARD = SPACES THEN
+00142                    MOVE "NO TITLE" TO ERROR-MESSAGE
+00143                 ELSE
+00144                    IF BOOK-AUTHOR-NAME OF BIBLIOGRAPHY-CARD = SPACES THEN
+00145                       MOVE "NO AUTHOR" TO ERROR-MESSAGE
+00146                    ELSE
+00147                       IF BOOK-PRICE OF BIBLIOGRAPHY-CARD NOT NUMERIC THEN
+00148                          MOVE ZEROS TO BOOK-PRICE OF BIBLIOGRAPHY-CARD
+00149                          MOVE "INVALID PRICE" TO ERROR-MESSAGE
+00150                       ELSE
+
+00151                          IF BOOK-PRICE OF BIBLIOGRAPHY-CARD = ZEROS THEN
+00152                             MOVE "INVALID PRICE" TO ERROR-MESSAGE
+00153                          ELSE
+00154                             IF ORDER-QUANTITY OF BIBLIOGRAPHY-CARD
+00155                                   NOT NUMERIC THEN
+00156                                MOVE ZEROS TO ORDER-QUANTITY OF
+00157                                   BIBLIOGRAPHY-CARD
+00158                                MOVE "INVALID QTY" TO ERROR-MESSAGE
+00159                             ELSE
+00160                                IF ORDER-QUANTITY OF BIBLIOGRAPHY-CARD
+00161                                      = ZEROS THEN
+00162                                   MOVE "INVALID QTY" TO ERROR-MESSAGE
+00163                                ELSE
+00164                                   MOVE SPACES TO ERROR-MESSAGE.
+00165         *
+00166          NEW-PUBLISHER-ROUTINE.
+00167              MOVE " PUBLISHER SUBTOTAL:" TO OUTPUT-TOTAL-NAME.
+00168              MOVE SUM-PRICES-BY-PUBLISHER TO ORDER-TOTAL.
+   4        BIBLIOGR        12.15.19        MAY 25,1924
+
+
+00169              WRITE PRINT-LINE FROM ORDER-TOTAL-LINE AFTER 2 LINES.
+00170              MOVE BOOK-PUBLISHER OF BIBLIOGRAPHY-CARD TO PUBLISHER-NAME.
+00171              ADD 2 TO LINE-COUNT.
+00172              MOVE ZEROS TO SUM-PRICES-BY-PUBLISHER.
+00173              IF LINE-COUNT > 50 THEN
+00174                 PERFORM NEW-PAGE-ROUTINE
+00175              ELSE
+00176                 WRITE PRINT-LINE FROM PUBLISHER-NAME-LINE AFTER 2 LINES
+00177                 ADD 2 TO LINE-COUNT.
+00178         *
+
+00179          NEW-PAGE-ROUTINE.
+
+00180              WRITE PRINT-LINE FROM REPORT-TITLE AFTER TOP-OF-PAGE.
+00181              WRITE PRINT-LINE FROM COLUMN-HEADING AFTER 2 LINES.
+00182              WRITE PRINT-LINE FROM PUBLISHER-NAME-LINE AFTER 2 LINES.
+00183              MOVE 5 TO LINE-COUNT.
+00184         *
+00185          PRINT-TOTALS-AND-CLOSE.
+00186              MOVE " PUBLISHER SUBTOTAL:" TO OUTPUT-TOTAL-NAME.
+00187              MOVE SUM-PRICES-BY-PUBLISHER TO ORDER-TOTAL.
+00188              WRITE PRINT-LINE FROM ORDER-TOTAL-LINE AFTER 2 LINES.
+00189              MOVE " OVERALL ORDER TOTAL:" TO OUTPUT-TOTAL-NAME.
+00190              MOVE SUM-PRICES-OVER-ALL TO ORDER-TOTAL.
+00191              WRITE PRINT-LINE FROM ORDER-TOTAL-LINE AFTER 2 LINES.
+00192              CLOSE BIBLIOGRAPHY-CARD-FILE, BIBLIOGRAPHY-LIST-FILE.
+   5        BIBLIOGR        12.15.19        MAY 25,1924
+
+
+
+*STATISTICS*     SOURCE RECORDS =   192     DATA DIVISION STATEMENTS =    57     PROCEDURE DIVISION STATEMENTS =    74
+*OPTIONS IN EFFECT*     SIZE =  131072  BUF =   12288  LINECNT = 57  SPACE1, FLAGW,   SEQ,   SOURCE
+*OPTIONS IN EFFECT*     NODMAP, NOPMAP, NOCLIST, NOSUPMAP, NOXREF, NOSXREF,   LOAD, NODECK, QUOTE, NOTRUNC, NOFLOW
+*OPTIONS IN EFFECT*     NOTERM, NONUM, NOBATCH, NONAME, COMPILE=01, NOSTATE, NORESIDENT, NODYNAM, NOLIB, NOSYNTAX
+*OPTIONS IN EFFECT*     NOOPTIMIZE, NOSYMDMP, NOTEST,   VERB,   ZWB, SYST, NOENDJOB, NOLVL
+*OPTIONS IN EFFECT*     NOLST , NOFDECK,NOCDECK, LCOL2,  L120,   DUMP ,   ADV , NOPRINT,
+*OPTIONS IN EFFECT*     NOCOUNT, NOVBSUM, NOVBREF, LANGLVL(2)
+
+                                                      VS LOADER
+
+OPTIONS USED - PRINT,NOMAP,NOLET,CALL,RES,NOTERM,SIZE=307200,NAME=**GO
+
+  TOTAL LENGTH     3760
+  ENTRY ADDRESS   9C010
+
+
+                                           B I B L I O G R A P H Y   O R D E R   L I S T
+
+  PUBLISHER             AUTHOR                      TITLE                              PRICE    QUANTITY      TOTAL  ERROR
+
+  THIEME
+                        PHILIP K. DICK              DO ANDROIDS DREAM OF SHEEP        $12.34       20       $246.80
+                        WENDY DOUGLAS               COOKNG FOR FUN                    $54.82       33       $809.06
+                                                    DON'T KNOW WHO WROTE THIS         $10.05       25         $0.00  NO AUTHOR
+
+                                                                                  PUBLISHER SUBTOTAL:     $1,055.86
+
+  ALEXA
+                        DOUGLAS ADAMS               THE HITCHHIKER'S GUIDE            $45.67       19       $867.73
+                        BENNY KING MEYERS           AND ANOTHER BOOK JUST SO          $45.87       56       $568.72
+                        JAMES FREE KAHN             EVERYTHING FOR FREE !!!            $0.00        0         $0.00  INVALID PRICE
+
+                                                                                  PUBLISHER SUBTOTAL:     $1,436.45
+
+  REDERER
+                        RAY BRADBURY                SOMETHING WICKED THIS WAY         $78.95       22       $736.90
+                        JIMMY BRIXTON               WHAT SHOULD I DO NEXT...          $87.55       21       $838.55
+                        ANNA WENDENER                                                 $63.52       41         $0.00  NO TITLE
+
+                                                                                  PUBLISHER SUBTOTAL:     $1,575.45
+
+
+                        IRINA SAD                   NOONE WANTS TO PUBLISH MY BK      $11.11       11         $0.00  NO PUBLISHER
+
+                                                                                  PUBLISHER SUBTOTAL:         $0.00
+
+                                                                                  OVERALL ORDER TOTAL     $4,067.76
+
+                         SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN   CCCCCCCCCC   OOOOOOOOOOOO
+                       SSSSSSSSSSSS   IIIIIIIIII   MMM      MMM  OOOOOOOOOOOO  NNN       NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+                      SS        SS       II       MMMM    MMMM  OO        OO  NNNN      NN  CC        CC  OO        OO
+                     SS                 II       MM MM  MM MM  OO        OO  NN NN     NN  CC            OO        OO
+                    SSS                II       MM  MMMM  MM  OO        OO  NN  NN    NN  CC            OO        OO
+                    SSSSSSSSS         II       MM   MM   MM  OO        OO  NN   NN   NN  CC            OO        OO
+                    SSSSSSSSS        II       MM        MM  OO        OO  NN    NN  NN  CC            OO        OO
+                          SSS       II       MM        MM  OO        OO  NN     NN NN  CC            OO        OO
+                          SS       II       MM        MM  OO        OO  NN      NNNN  CC            OO        OO
+               SS        SS       II       MM        MM  OO        OO  NN       NNN  CC        CC  OO        OO
+              SSSSSSSSSSSS   IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN        NN  CCCCCCCCCCCC  OOOOOOOOOOOO
+              SSSSSSSSSS    IIIIIIIIII   MM        MM  OOOOOOOOOOOO  NN         N   CCCCCCCCCC   OOOOOOOOOOOO
+
+
+
+                    JJJJJJJJJJ   2222222222    9999999999        11                                    AAAAAAAAAA
+                    JJJJJJJJJJ  222222222222  999999999999      111                                   AAAAAAAAAAAA
+                        JJ      22        22  99        99     1111                                   AA        AA
+                        JJ                22  99        99       11                                   AA        AA
+                        JJ                22  99        99       11                                   AA        AA
+                        JJ               22   999999999999       11                                   AAAAAAAAAAAA
+                        JJ             22     999999999999       11                                   AAAAAAAAAAAA
+                        JJ           22                 99       11                                   AA        AA
+                  JJ    JJ         22                   99       11                                   AA        AA
+                  JJ    JJ       22           99        99       11                                   AA        AA
+                  JJJJJJJJ      222222222222  999999999999   1111111111                               AA        AA
+                   JJJJJJ       222222222222   9999999999    1111111111                               AA        AA
+
+
+****A   END   JOB  291  SIMONCO   BIBLIOGRAPHY REPORT   ROOM       12.15.19 PM 25 MAY 24  PRINTER1  SYS HMVS  JOB  291   END   A****
